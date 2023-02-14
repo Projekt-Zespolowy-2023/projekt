@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="210F8CEE-1184-7E85-16AA-31B4E8A4DF6D" name="dyzury">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:46:12 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<ordsAlias>view_1</ordsAlias>
+<basedOnStructuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</basedOnStructuredType>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT * FROM dyzury_rwss WHERE data_dyzuru != date]]></userDefinedSQL>
+<parsed>true</parsed>
+<includeSchemaNameInQuery>true</includeSchemaNameInQuery>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="kod_dyzuru" id="BA01AE73-14DA-4441-A6A6-F11BACEB8941">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:47:38 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>INTEGER</dataType>
+<headerAlias>kod_dyzuru</headerAlias>
+<reference>false</reference>
+<referencedColumn>65C41823-5A86-98D4-B62F-93EE1FD37CD2</referencedColumn>
+<table>2DF5D6C8-1D99-EA22-6DE7-E1099BC51BE6</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nr_indeksu" id="4C882B3C-7696-96D5-EEB5-821D53DC0FE1">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:47:38 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>INTEGER</dataType>
+<headerAlias>nr_indeksu</headerAlias>
+<reference>false</reference>
+<referencedColumn>458A1FD4-F0EA-19FA-CC1D-0DBCA16A1F9E</referencedColumn>
+<table>2DF5D6C8-1D99-EA22-6DE7-E1099BC51BE6</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="data_dyzuru" id="6E2C14E5-39DF-7CDE-6EA8-9A7FFB8B178E">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:47:38 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>DATE</dataType>
+<headerAlias>data_dyzuru</headerAlias>
+<reference>false</reference>
+<referencedColumn>70757232-8369-B1EF-746C-F033CC6C9F8A</referencedColumn>
+<table>2DF5D6C8-1D99-EA22-6DE7-E1099BC51BE6</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="godzina_rozp" id="C60276ED-6AC5-7330-6740-3C73A686BFB7">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:47:38 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>DATE</dataType>
+<headerAlias>godzina_rozp</headerAlias>
+<reference>false</reference>
+<referencedColumn>E233ECAE-A929-1F9F-5DFC-4F27C7FC6459</referencedColumn>
+<table>2DF5D6C8-1D99-EA22-6DE7-E1099BC51BE6</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="godzina_zak" id="818BC297-378D-436C-99AA-F5B8A0F6AE07">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:47:38 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>DATE</dataType>
+<headerAlias>godzina_zak</headerAlias>
+<reference>false</reference>
+<referencedColumn>43F6EBB7-0CE7-927C-2E12-25305D9CFA96</referencedColumn>
+<table>2DF5D6C8-1D99-EA22-6DE7-E1099BC51BE6</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2DF5D6C8-1D99-EA22-6DE7-E1099BC51BE6">
+<container>true</container>
+<tableName>dyzury_rwss</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="65C41823-5A86-98D4-B62F-93EE1FD37CD2">
+<columnName>kod_dyzuru</columnName>
+<tableName>dyzury_rwss</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="458A1FD4-F0EA-19FA-CC1D-0DBCA16A1F9E">
+<columnName>nr_indeksu</columnName>
+<tableName>dyzury_rwss</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="70757232-8369-B1EF-746C-F033CC6C9F8A">
+<columnName>data_dyzuru</columnName>
+<tableName>dyzury_rwss</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E233ECAE-A929-1F9F-5DFC-4F27C7FC6459">
+<columnName>godzina_rozp</columnName>
+<tableName>dyzury_rwss</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="43F6EBB7-0CE7-927C-2E12-25305D9CFA96">
+<columnName>godzina_zak</columnName>
+<tableName>dyzury_rwss</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

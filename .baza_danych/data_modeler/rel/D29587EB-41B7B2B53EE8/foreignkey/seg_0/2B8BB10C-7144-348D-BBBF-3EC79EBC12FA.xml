@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2B8BB10C-7144-348D-BBBF-3EC79EBC12FA" containerWithKeyObject="6495624C-3F68-EF46-431B-32630EC1EF57" localFKIndex="CE4A85E4-4D3A-D049-28B6-930BF89CD67F" name="pisma_wychodzacev1_pisma_wychodzace_FK">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:32:12 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<referredTableLongName>pisma_wychodzace</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5559C983-017C-95B8-E895-B91BAAB3C510</referredTableID>
+<keyObject>D65500FE-1122-A61F-D1B8-0784F4A12F91</keyObject>
+<referredKeyID>D65500FE-1122-A61F-D1B8-0784F4A12F91</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_pisma</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

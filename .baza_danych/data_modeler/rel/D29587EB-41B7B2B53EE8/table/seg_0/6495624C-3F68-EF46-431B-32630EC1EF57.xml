@@ -1,0 +1,185 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6495624C-3F68-EF46-431B-32630EC1EF57" name="pisma_przychodzace">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:29:30 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pisma" id="AD3EE249-F587-415A-0472-07E64EA30058">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:29:30 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2B8BB10C-7144-348D-BBBF-3EC79EBC12FA" referredColumn="22B82609-4599-42B5-2C20-B4DA5A09027C"/>
+</associations>
+</Column>
+<Column name="nadawca" id="2CDEF3CA-F1B3-D15C-DFC8-04BAC3B1206E">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:29:30 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2D39CE3A-E777-987F-75A9-D37081C1646B" referredColumn="A2318BDB-D80D-0C12-69C8-81D477229AF5"/>
+</associations>
+</Column>
+<Column name="odbiorca" id="577B7D17-5D43-F450-B63A-E261508375B1">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:29:30 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F1BFD57-A64B-4CC6-9955-8A86B1FCE603" referredColumn="41B1DE2D-0EAB-5759-D5E2-FFA50072F9F5"/>
+</associations>
+</Column>
+<Column name="data_wyslania" id="7BE1BDF9-60B0-7A54-0690-C003EAE0B5FA">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:29:30 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_odbioru" id="D67B7E6F-DCA1-15D4-2BDB-25E269F77B6F">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:29:30 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="podpis_kwalifikowany" id="86D9A20C-60EA-2FAC-2600-8B9A8BE37C4C">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:29:30 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="40B4FFB4-ED4A-2E00-9198-E89061394ECE" referredColumn="B035E00F-A7E9-9E06-C234-4CE418067D32"/>
+</associations>
+</Column>
+<Column name="tresc" id="0675B048-E18C-EA37-71FB-5C26DAC77DD1">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:29:30 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zalaczniki" id="9BA2C407-BFD8-1576-49C2-E431BB964FE6">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:29:30 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT031</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="czy_odp" id="F449EA6B-3D4E-B56A-6B28-772353507636">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:32:12 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_odp" id="26E051A4-ABA3-08A6-6852-4EA95A4A80CC">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:32:12 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E79F4E22-D1B2-B5B2-AE5D-B8B702A4AAD6" name="pisma_wychodzacev1_PK">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:29:30 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD3EE249-F587-415A-0472-07E64EA30058"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="51D5E3B6-8A1A-0563-04D4-1CFF9DBAC629" name="pisma_wychodzacev1_pracownicy_FKv1">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:32:12 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CDEF3CA-F1B3-D15C-DFC8-04BAC3B1206E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="538D5946-DE7D-8D7C-6EA2-FE879B7F8120" name="pisma_wychodzacev1_studenci_FKv1">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:32:12 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="577B7D17-5D43-F450-B63A-E261508375B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE4A85E4-4D3A-D049-28B6-930BF89CD67F" name="pisma_wychodzacev1_pisma_wychodzace_FK">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:32:12 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD3EE249-F587-415A-0472-07E64EA30058"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04CCD774-BC91-75E3-FC38-9A00C7C85CBC" name="pisma_przychodzace_podpisy_kwalifikowane_FK">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:36:42 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86D9A20C-60EA-2FAC-2600-8B9A8BE37C4C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2DF5D6C8-1D99-EA22-6DE7-E1099BC51BE6" name="dyzury_rwss">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:12:51 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="kod_dyzuru" id="65C41823-5A86-98D4-B62F-93EE1FD37CD2">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:19:47 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_indeksu" id="458A1FD4-F0EA-19FA-CC1D-0DBCA16A1F9E">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:19:47 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA65290D-5227-8AB8-2467-E18E0BEE196D" referredColumn="41B1DE2D-0EAB-5759-D5E2-FFA50072F9F5"/>
+</associations>
+</Column>
+<Column name="data_dyzuru" id="70757232-8369-B1EF-746C-F033CC6C9F8A">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:19:47 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="godzina_rozp" id="E233ECAE-A929-1F9F-5DFC-4F27C7FC6459">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:19:47 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="godzina_zak" id="43F6EBB7-0CE7-927C-2E12-25305D9CFA96">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:19:47 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="70202673-801C-9A78-3A1A-D9D1293036AC" name="dyzury_rwss_PK">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:19:47 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65C41823-5A86-98D4-B62F-93EE1FD37CD2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB8823A0-3614-7A61-BB54-65C4C0F12E49" name="TABLE_5_studenci_FK">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:19:47 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="458A1FD4-F0EA-19FA-CC1D-0DBCA16A1F9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

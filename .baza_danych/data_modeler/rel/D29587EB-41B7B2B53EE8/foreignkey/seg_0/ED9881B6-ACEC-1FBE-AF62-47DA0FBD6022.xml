@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ED9881B6-ACEC-1FBE-AF62-47DA0FBD6022" containerWithKeyObject="5559C983-017C-95B8-E895-B91BAAB3C510" localFKIndex="AE2CD645-06A1-FD1B-1D8A-2F75EACEC254" name="pisma_wychodzace_podpisy_kwalifikowane_FK">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:35:58 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<referredTableLongName>podpisy_kwalifikowane</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3985E3DB-669F-2DB8-1E95-9DE3BA77AAAC</referredTableID>
+<keyObject>A8B946F0-C07D-26AE-B410-1AF4D8DEF289</keyObject>
+<referredKeyID>A8B946F0-C07D-26AE-B410-1AF4D8DEF289</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>kod_podpisu</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

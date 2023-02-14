@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="976813BF-AAD2-2277-E21B-6018418E3613" name="studenci">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:03:31 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nr_indeksu" id="41B1DE2D-0EAB-5759-D5E2-FFA50072F9F5">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:06:55 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="imie_st" id="6E0C7213-8C22-EDC4-CCCA-3986796D4063">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:06:55 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwisko_st" id="7BA82BBD-F92E-9F5D-6711-376C965078A6">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:06:55 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rok_st" id="26439C42-F9C3-874E-BECB-1805183147A7">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:06:55 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sem_st" id="AFFBD768-3160-FDEA-9D76-2E33B6DB7B4D">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:06:55 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="aktywacja" id="619301B7-6375-FC83-02B1-3C56EB52E15C">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:06:55 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pesel_st" id="23F065A2-569F-4225-4F50-709903DB8021">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:06:55 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FAC2B8A6-AE9F-FF4B-503D-B0788A5028D5" name="studenci_PK">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:06:55 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41B1DE2D-0EAB-5759-D5E2-FFA50072F9F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
