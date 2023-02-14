@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3985E3DB-669F-2DB8-1E95-9DE3BA77AAAC" name="podpisy_kwalifikowane">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:32:32 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="kod_podpisu" id="B035E00F-A7E9-9E06-C234-4CE418067D32">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:35:11 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="imie" id="0DB20791-EB25-FD42-8292-F3ABE6477408">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:35:11 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwisko" id="1690DCD6-C0C0-F1F3-EEBE-2448C8E0E6F1">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:35:11 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="adres" id="754D1D0C-6941-F45C-7B66-F541475435C6">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:35:11 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="czy_zweryfikowany" id="9407E270-B624-AED9-960F-7BAEE0F924A8">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:35:11 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_prac" id="67635E2D-B3AD-B3D9-07BA-DF371B1B658D">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:35:11 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="24ED73BC-DDE6-D320-5B37-792D34E3AA13" referredColumn="A2318BDB-D80D-0C12-69C8-81D477229AF5"/>
+</associations>
+</Column>
+<Column name="indeks" id="0FBBC609-15AC-7EE7-1D1C-48D76A715855">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:35:11 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="95739533-27A3-B751-250E-BDE8CD8FAB4B" referredColumn="41B1DE2D-0EAB-5759-D5E2-FFA50072F9F5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8B946F0-C07D-26AE-B410-1AF4D8DEF289" name="podpisy_kwalifikowane_PK">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:35:11 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B035E00F-A7E9-9E06-C234-4CE418067D32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="95BBDB76-CE41-C4BC-13D3-3D5E198FD1D7" name="TABLE_11_pracownicy_FK">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:35:11 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67635E2D-B3AD-B3D9-07BA-DF371B1B658D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71B68796-DF8E-AEE8-E5FC-51979C692D7C" name="TABLE_11_studenci_FK">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:35:11 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FBBC609-15AC-7EE7-1D1C-48D76A715855"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5FBEFE8E-D6D1-5DE9-08A0-6E10A3ADB384" name="logowania">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:20:03 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="indeks" id="A70FB65C-193C-BA72-00C7-081197139DF6">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:21:45 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04658B19-238A-16EE-3D67-FBAF0DBA5C6E" referredColumn="41B1DE2D-0EAB-5759-D5E2-FFA50072F9F5"/>
+</associations>
+</Column>
+<Column name="id_prac" id="5C8399A2-FA83-06B5-46E1-0860DBFD6AED">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:21:45 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7934CC8-6278-97C2-D99D-DACBD3A66BA7" referredColumn="A2318BDB-D80D-0C12-69C8-81D477229AF5"/>
+</associations>
+</Column>
+<Column name="data_log" id="2614EE54-0644-CA4A-6250-2B5C888B438D">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:21:45 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="godzina_log" id="71BDB9AF-8815-485D-537D-10384EBFACD1">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:21:45 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="czy_udane" id="5E78F7B1-C2BB-9158-CB8C-D852BE1AF428">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:21:45 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4EEFEB0F-CF57-D6FD-59A6-D7CF82A3B1BB" name="logowania_pracownicy_FK">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:23:18 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C8399A2-FA83-06B5-46E1-0860DBFD6AED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E621FE6D-B086-9E6A-A2CA-C518CFFB633E" name="logowania_studenci_FK">
+<createdBy>pawel</createdBy>
+<createdTime>2023-02-14 13:23:18 UTC</createdTime>
+<ownerDesignName>data_modeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A70FB65C-193C-BA72-00C7-081197139DF6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
