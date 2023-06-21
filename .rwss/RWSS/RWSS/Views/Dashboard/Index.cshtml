@@ -12,7 +12,8 @@
        class="btn btn-primary">Dodaj wydarzenie</a>
     <a type="button" asp-controller="Account" asp-action="RegisterDeaneryWorker"
        class="btn btn-primary">Dodaj konto specjalne</a>
-    <a type="button" asp-controller="Dashboard" asp-action="SelectDeaneryWorker"
+       <!--DO POPRAWY: -->
+    <a type="button" asp-controller="Dashboard" asp-action="SelectDeaneryWorker" 
        class="btn btn-primary">Skontaktuj się z pracownikiem dziekanatu</a>
     <a type="button" asp-controller="Dashboard" asp-action="SelectRWSSUser"
        class="btn btn-primary">Skontaktuj się z członkiem RWSS</a>
@@ -21,7 +22,7 @@ else if (User.Identity.IsAuthenticated && User.IsInRole("deaneryworker"))
 {
     <a type="button" asp-controller="Event" asp-action="Create"
        class="btn btn-primary">Dodaj wydarzenie</a>
-    <a type="button" asp-controller="Event" asp-action="Create"
+    <a type="button" asp-controller="Dashboard" asp-action="SendEmail"
        class="btn btn-primary">Skontaktuj się z przewodniczącym RWSS</a>
 }
 else if (User.Identity.IsAuthenticated && User.IsInRole("rwssuser"))

@@ -4198,11 +4198,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\przem\\Desktop\\studia\\III ROK\\RWSS\\RWSS\\RWSS.csproj",
+      "projectUniqueName": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\RWSS.csproj",
       "projectName": "RWSS",
-      "projectPath": "C:\\Users\\przem\\Desktop\\studia\\III ROK\\RWSS\\RWSS\\RWSS.csproj",
+      "projectPath": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\RWSS.csproj",
       "packagesPath": "C:\\Users\\przem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\przem\\Desktop\\studia\\III ROK\\RWSS\\RWSS\\obj\\",
+      "outputPath": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

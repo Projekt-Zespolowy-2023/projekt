@@ -1,6 +1,10 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using MailKit.Net.Smtp;
+using MailKit;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using MimeKit;
+using Org.BouncyCastle.Cms;
 using RWSS.Data;
 using RWSS.Data.Enum;
 using RWSS.Interfaces;
@@ -13,10 +17,12 @@ namespace RWSS.Controllers
     {
         private readonly IDashboardRepository _dashboardRepository;
         private readonly UserManager<AppUser> _userManager;
-        public DashboardController(IDashboardRepository dashboardRepository, UserManager<AppUser> userManager)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public DashboardController(IDashboardRepository dashboardRepository, UserManager<AppUser> userManager, IHttpContextAccessor httpContextAccessor)
         {
             _dashboardRepository = dashboardRepository;
             _userManager = userManager;
+            _httpContextAccessor = httpContextAccessor;
         }
         public async Task<IActionResult> Index()
         {
@@ -140,13 +146,6 @@ namespace RWSS.Controllers
             var deaneryWorkers = await _dashboardRepository.GetAllDeaneryWorkers();
 
             return View(deaneryWorkers);
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> SendEmail(string id)
-        {
-            var deaneryWorker = await _dashboardRepository.GetByIdAsync(id);
-            return View(deaneryWorker);
         }
     }
 }

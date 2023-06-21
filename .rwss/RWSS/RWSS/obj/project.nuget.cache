@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wvcmQkj/6A+/g9a4Yn7yJfDw3f8MaH00UisFeUVh6hB8qCXInVARorhQWtfxiDqEDmMK/KYpA71BhuzRktIHoQ==",
+  "dgSpecHash": "EIrD75Cj51yMiELvjt/2tYbhMOW4S5+/NQqhh8g2HT7yr+vsxo+eu06KPK9Suz4NPyAAVuHzRorIZ9mQlIK9kA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\przem\\Desktop\\studia\\III ROK\\RWSS\\RWSS\\RWSS.csproj",
+  "projectFilePath": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\RWSS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\przem\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\przem\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

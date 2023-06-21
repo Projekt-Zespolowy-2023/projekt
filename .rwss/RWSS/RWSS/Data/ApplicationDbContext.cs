@@ -13,5 +13,8 @@ namespace RWSS.Data
 		public DbSet<Event> Events { get; set; }
 		public DbSet<Student> Students { get; set; }
 		public DbSet<DeaneryWorker> DeaneryWorkers { get; set;}
+		public DbSet<Message> Messages { get; set; }
+		public DbSet<Duty> Duties { get; set; }
+		public DbSet<Assignment> Assignments { get; set; }
 	}
 }
