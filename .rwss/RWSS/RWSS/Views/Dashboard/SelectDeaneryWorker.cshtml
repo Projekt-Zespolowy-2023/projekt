@@ -1,0 +1,29 @@
+﻿@model IEnumerable<DeaneryWorker>
+
+<h1>Wybierz pracownika dziekanatu</h1>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-body">
+                            <p class="card-text">Imię: @item.AppUser.FirstName</p>
+                            <p class="card-text">Nazwisko: @item.AppUser.LastName</p>
+                            <p class="card-text">Pozycja: @item.PositionCategory</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a type="btn btn=success" asp-controller="Dashboard" asp-action="SendEmail" asp-route-id="@item.AppUser.Id"
+                                       class="btn btn-sm btn-outline-secondary">Wyślij maila</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

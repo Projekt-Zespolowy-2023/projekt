@@ -1,0 +1,15 @@
+﻿@using RWSS.Data.Enum
+@using RWSS.ViewModels.Dashboard
+@model ProfileRolesViewModel
+
+<form method="post" asp-action="EditProfileRoles" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="RoleCategory">Rola</label>
+        <select asp-for="RoleCategory" asp-items="@Html.GetEnumSelectList<RoleCategory>()" class="form-control">
+            <option selected="selected" value="">--Wybierz--</option>
+        </select>
+        <span asp-validation-for="RoleCategory" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Zatwierdź</button>
+</form>

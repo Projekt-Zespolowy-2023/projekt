@@ -1,0 +1,59 @@
+﻿@using RWSS.Data.Enum
+@using RWSS.ViewModels.Registration
+@model RegisterDeaneryWorkerViewModel
+
+<h1>Rejestracja dla dziekanatu</h1>
+
+<div class="row">
+    <div class="row">
+        <div class="col-md-8 offset-2">
+            <form asp-action="RegisterDeaneryWorker">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="FirstName" class="control-label"></label>
+                    <input asp-for="FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="LastName" class="control-label"></label>
+                    <input asp-for="LastName" class="form-control" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PeselNumber" class="control-label"></label>
+                    <input asp-for="PeselNumber" class="form-control" />
+                    <span asp-validation-for="PeselNumber" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BirthDate" class="control-label"></label>
+                    <input asp-for="BirthDate" class="form-control" />
+                    <span asp-validation-for="BirthDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="EmailAddress" class="control-label"></label>
+                    <input asp-for="EmailAddress" class="form-control" />
+                    <span asp-validation-for="EmailAddress" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ConfirmPassword" class="control-label"></label>
+                    <input asp-for="ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PositionCategory">Pozycja w dziekanacie</label>
+                    <select asp-for="PositionCategory" asp-items="@Html.GetEnumSelectList<PositionCategory>()" class="form-control">
+                        <option selected="selected" value="">--Wybierz--</option>
+                    </select>
+                    <span asp-validation-for="PositionCategory" class="text-danger"></span>
+                </div>
+                <input class="btn btn-outline-success float-right" type="submit" value="Utwórz konto specjalne!" />
+                <a class="btn btn-outline-secondary" asp-controller="Dashboard" asp-action="Index">Anuluj</a>
+            </form>
+        </div>
+    </div>
+</div>

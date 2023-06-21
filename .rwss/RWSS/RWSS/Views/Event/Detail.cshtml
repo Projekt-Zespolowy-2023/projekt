@@ -1,0 +1,28 @@
+﻿@model Event
+
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Portfolio Item Heading -->
+    <h1 class="my-4">Szczegóły Wydarzenia
+    </h1>
+  
+    <!-- Portfolio Item Row -->
+    <div class="row">
+  
+      <div class="col-md-4">
+        <h3 class="my-3">@Model.Title - @Model.EventDate.ToShortDateString() </h3>
+        <p>@Model.Description</p>
+        <h3 class="my-3">Kategoria wydarzenia</h3>
+        <ul>
+          <li>@Model.EventCategory</li>
+        </ul>
+            <h5>Utworzono - @Model.CreationDate.ToShortDateString()</h5>
+            <h5>Zaktualizowano - @Model.UpdateDate.ToShortDateString()</h5>
+      </div>
+  
+    </div>
+    <!-- /.row -->
+  
+  </div>
+  <!-- /.container -->
