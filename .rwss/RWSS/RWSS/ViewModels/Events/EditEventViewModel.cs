@@ -22,5 +22,6 @@ namespace RWSS.ViewModels.Events
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
         public DateTime EventDate { get; set; }
+        public YearCategory YearCategory { get; set; }
     }
 }

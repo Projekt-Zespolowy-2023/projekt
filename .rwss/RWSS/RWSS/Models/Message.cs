@@ -14,6 +14,9 @@ namespace RWSS.Models
         [Required]
         public string Body { get; set; }
 
+        [DataType(DataType.Date)]
+        public DateTime DateSent { get; set; }
+
         [ForeignKey("Sender")]
         public string? SenderId { get; set; }
         public AppUser? Sender { get; set; }

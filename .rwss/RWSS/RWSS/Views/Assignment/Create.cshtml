@@ -1,0 +1,18 @@
+﻿@using RWSS.ViewModels.Assignment
+
+@model CreateAssignmentViewModel
+
+<form method="post" asp-action="Create">
+    <input type="hidden" id="AssigneeId" name="AssigneeId" asp-for="AssigneeId" />
+    <div class="form-group">
+        <label asp-for="Body">Treść zadania</label>
+        <input asp-for="Body" class="form-control" placeholder="Tytuł">
+        <span asp-validation-for="Body" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DateOfAssignment">Data zadania</label>
+        <input asp-for="DateOfAssignment" class="form-control" placeholder="Tytuł">
+        <span asp-validation-for="DateOfAssignment" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-block btn-success btn-lg">Zatwierdź</button>
+</form>

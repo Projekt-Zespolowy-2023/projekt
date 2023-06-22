@@ -59,7 +59,7 @@ namespace RWSS.Controllers
 			};
 
 			_eventRepository.Add(eve);
-			return RedirectToAction("Index");
+			return RedirectToAction("Index", "Dashboard");
 		}
 
         [HttpGet]
@@ -99,10 +99,11 @@ namespace RWSS.Controllers
                 CreationDate = userEvent.CreationDate,
                 UpdateDate = DateTime.Now,
                 EventDate = eveVM.EventDate,
+				YearCategory = eveVM.YearCategory
             };
 			_eventRepository.Update(eve);
 
-			return RedirectToAction("Index");
+			return RedirectToAction("Index", "Dashboard");
 		}
 
 		[HttpGet]

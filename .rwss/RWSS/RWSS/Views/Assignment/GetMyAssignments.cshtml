@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Assignment>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-body">
+                            <p class="card-text">Treść: @item.Body</p>
+                            <p class="card-text">Data zadania: @item.DateOfAssignment.ToShortDateString()</p>
+                            <p class="card-text">Zaktualizowano: @item.DateOfAssignment.ToShortDateString()</p>
+                            <p class="card-text">Przypisano przez: @item.Assignor.FirstName @item.Assignor.LastName</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

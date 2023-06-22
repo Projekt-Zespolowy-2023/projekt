@@ -1,0 +1,16 @@
+﻿@using RWSS.ViewModels.Assignment
+@model EditAssignmentViewModel
+
+<form method="post" asp-action="Edit" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Body">Treść</label>
+        <input asp-for="Body" class="form-control" placeholder="Tytuł">
+        <span asp-validation-for="Body" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DateOfAssignment" class="control-label">Data zadania</label>
+        <input asp-for="DateOfAssignment" class="form-control" />
+        <span asp-validation-for="DateOfAssignment" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Zatwierdź</button>
+</form>
