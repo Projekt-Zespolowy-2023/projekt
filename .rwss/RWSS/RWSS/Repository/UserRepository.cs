@@ -12,24 +12,25 @@ namespace RWSS.Repository
         {
             _context = context;
         }
-        public bool Add(AppUser user)
+
+        public async Task<Student> GetStudentById(string id)
         {
-            throw new NotImplementedException();
+            return await _context.Students.Include(a => a.AppUser).FirstOrDefaultAsync(i => i.AppUser.Id == id);
         }
 
-        public bool Delete(AppUser user)
+        public async Task<DeaneryWorker> GetDeaneryWorkerById(string id)
         {
-            throw new NotImplementedException();
+            return await _context.DeaneryWorkers.Include(a => a.AppUser).FirstOrDefaultAsync(i => i.AppUser.Id == id);
         }
 
-        public async Task<IEnumerable<AppUser>> GetAllUsers()
-        {
-            return await _context.Users.ToListAsync();
-        }
-
-        public async Task<AppUser> GetUserById(string id)
+        public async Task<AppUser> GetAppUserById(string id)
         {
             return await _context.Users.FindAsync(id);
+        }
+
+        public async Task<AppUser> GetAppUserByIdNoTracking(string id)
+        {
+            return await _context.Users.Where(a => a.Id == id).AsNoTracking().FirstOrDefaultAsync();
         }
 
         public bool Save()
@@ -43,5 +44,17 @@ namespace RWSS.Repository
             _context.Update(user);
             return Save();
         }
-    }
+
+		public bool UpdateStudent(Student student)
+		{
+			_context.Update(student);
+			return Save();
+		}
+
+		public bool UpdateDeaneryWorker(DeaneryWorker deaneryWorker)
+		{
+			_context.Update(deaneryWorker);
+			return Save();
+		}
+	}
 }

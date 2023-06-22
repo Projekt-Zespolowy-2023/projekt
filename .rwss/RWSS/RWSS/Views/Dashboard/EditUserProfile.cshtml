@@ -1,0 +1,17 @@
+﻿@using RWSS.ViewModels.Dashboard
+@model EditUserViewModel
+
+<form method="post" asp-action="EditUserProfile" enctype="multipart/form-data">
+    <input type="hidden" id="Id" name="Id" asp-for="AppUserId"/>
+    <div class="form-group">
+        <label asp-for="EmailAdress">Adres email</label>
+        <input asp-for="EmailAdress" class="form-control" placeholder="Adres email">
+        <span asp-validation-for="EmailAdress" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PhoneNumber">Numer telefonu</label>
+        <input asp-for="PhoneNumber" class="form-control" placeholder="Numer telefonu">
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Zatwierdź</button>
+</form>

@@ -4,11 +4,13 @@ namespace RWSS.Interfaces
 {
     public interface IUserRepository
     {
-        Task<IEnumerable<AppUser>> GetAllUsers();
-        Task<AppUser> GetUserById(string id);
-        bool Add(AppUser user);
+        Task<Student> GetStudentById(string id);
+        Task<DeaneryWorker> GetDeaneryWorkerById(string id);
+        Task<AppUser> GetAppUserById(string id);
+        Task<AppUser> GetAppUserByIdNoTracking(string id);
         bool Update(AppUser user);
-        bool Delete(AppUser user);
+        bool UpdateStudent(Student student);
+        bool UpdateDeaneryWorker(DeaneryWorker deaneryWorker);
         bool Save();
     }
 }

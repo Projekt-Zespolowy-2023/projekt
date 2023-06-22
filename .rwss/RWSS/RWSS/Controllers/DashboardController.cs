@@ -10,6 +10,8 @@ using RWSS.Data.Enum;
 using RWSS.Interfaces;
 using RWSS.Models;
 using RWSS.ViewModels.Dashboard;
+using Azure.Core;
+using System.Runtime.InteropServices;
 
 namespace RWSS.Controllers
 {
@@ -18,11 +20,16 @@ namespace RWSS.Controllers
         private readonly IDashboardRepository _dashboardRepository;
         private readonly UserManager<AppUser> _userManager;
         private readonly IHttpContextAccessor _httpContextAccessor;
-        public DashboardController(IDashboardRepository dashboardRepository, UserManager<AppUser> userManager, IHttpContextAccessor httpContextAccessor)
+        private readonly IUserRepository _userRepository;
+        public DashboardController(IDashboardRepository dashboardRepository,
+                                   UserManager<AppUser> userManager,
+                                   IHttpContextAccessor httpContextAccessor,
+                                   IUserRepository userRepository)
         {
             _dashboardRepository = dashboardRepository;
             _userManager = userManager;
             _httpContextAccessor = httpContextAccessor;
+            _userRepository = userRepository;
         }
         public async Task<IActionResult> Index()
         {
@@ -138,6 +145,102 @@ namespace RWSS.Controllers
             
 
             return RedirectToAction("Index", "Dashboard");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> EditUserProfile()
+        {
+            var curUserId = _httpContextAccessor.HttpContext?.User.GetUserId();
+            var user = await _userRepository.GetAppUserById(curUserId);
+            if (user == null)
+            {
+                return View("Error");
+            }
+            var editUserViewModel = new EditUserViewModel()
+            {
+                AppUserId = curUserId,
+                EmailAdress = user.Email,
+                PhoneNumber = user.PhoneNumber,
+            };
+            return View(editUserViewModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditUserProfile(EditUserViewModel editUserViewModel)
+        {
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError("", "Failed to edit profile");
+                return View("EditUserProfile", editUserViewModel);
+            }
+
+            var user = await _userRepository.GetAppUserByIdNoTracking(editUserViewModel.AppUserId);
+            var userRole = await _userManager.GetRolesAsync(user);
+            var newUser = new AppUser
+            {
+                Id = user.Id,
+                Email = editUserViewModel.EmailAdress,
+                PhoneNumber = editUserViewModel.PhoneNumber,
+                UserName = editUserViewModel.EmailAdress,
+                NormalizedUserName = editUserViewModel.EmailAdress.ToUpper(),
+                NormalizedEmail = editUserViewModel.EmailAdress.ToUpper(),
+                EmailConfirmed = user.EmailConfirmed,
+                PasswordHash = user.PasswordHash,
+                SecurityStamp = user.SecurityStamp,
+                ConcurrencyStamp = user.ConcurrencyStamp,
+                PhoneNumberConfirmed = user.PhoneNumberConfirmed,
+                TwoFactorEnabled = user.TwoFactorEnabled,
+                LockoutEnd = user.LockoutEnd,
+                LockoutEnabled = user.LockoutEnabled,
+                AccessFailedCount = user.AccessFailedCount,
+                BirthDate = user.BirthDate,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                PeselNumber = user.PeselNumber,
+                RoleCategory = user.RoleCategory,
+            };
+
+            if (user.RoleCategory == RoleCategory.Pracownik_Dziekanatu)
+            {
+                var deaneryWorker = await _userRepository.GetDeaneryWorkerById(user.Id);
+                editUserViewModel.DeaneryWorkerId = deaneryWorker.Id;
+                editUserViewModel.PositionCategory = deaneryWorker.PositionCategory;
+                var newDW = new DeaneryWorker
+                {
+                    Id = (int)editUserViewModel.DeaneryWorkerId,
+                    PositionCategory = (PositionCategory)editUserViewModel.PositionCategory,
+                    AppUserId = user.Id,
+                    AppUser = newUser,
+                };
+                _userRepository.Update(newUser);
+				await _userManager.AddToRolesAsync(newUser, userRole);
+				_userRepository.UpdateDeaneryWorker(newDW);
+                
+                return RedirectToAction("Index", "Dashboard");
+            }
+            else
+            {
+                var student = await _userRepository.GetStudentById(user.Id);
+                editUserViewModel.StudentId = student.Id;
+				editUserViewModel.YearCategory = student.YearCategory;
+				editUserViewModel.SemesterCategory = student.SemesterCategory;
+				editUserViewModel.DegreeCourseCategory = student.DegreeCourseCategory;
+				editUserViewModel.StudiesDegreeCategory = student.StudiesDegreeCategory;
+                var newStudent = new Student
+                {
+                    Id = (int)editUserViewModel.StudentId,
+                    YearCategory = (YearCategory)editUserViewModel.YearCategory,
+                    SemesterCategory = (SemesterCategory)editUserViewModel.SemesterCategory,
+                    DegreeCourseCategory = (DegreeCourseCategory)editUserViewModel.DegreeCourseCategory,
+                    StudiesDegreeCategory = (StudiesDegreeCategory)editUserViewModel.StudiesDegreeCategory,
+                    AppUserId = user.Id,
+                };
+                _userRepository.Update(newUser);
+				await _userManager.AddToRolesAsync(newUser, userRole);
+				_userRepository.UpdateStudent(student);
+				
+				return RedirectToAction("Index", "Dashboard");
+			}
         }
 
         [HttpGet]
