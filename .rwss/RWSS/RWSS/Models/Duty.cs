@@ -15,6 +15,12 @@ namespace RWSS.Models
         [DataType(DataType.Date)]
         public DateTime DateAssigned { get; set; }
 
+        [DataType(DataType.Date)]
+        public DateTime UpdateDate { get; set; }
+
+        public DayOfWeek DayOfWeek { get; set; }
+        public TimeOnly TimeOfDuty { get; set; }
+
         [ForeignKey("Assignee")]
         public string? AssigneeId { get; set; }
         public AppUser? Assignee { get; set; }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using RWSS.Converters;
 using RWSS.Models;
 
 namespace RWSS.Data
@@ -10,7 +11,11 @@ namespace RWSS.Data
 		{
 
 		}
-		public DbSet<Event> Events { get; set; }
+        protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+        {
+            configurationBuilder.Properties<TimeOnly>().HaveConversion<TimeOnlyConverter>();
+        }
+        public DbSet<Event> Events { get; set; }
 		public DbSet<Student> Students { get; set; }
 		public DbSet<DeaneryWorker> DeaneryWorkers { get; set;}
 		public DbSet<Message> Messages { get; set; }

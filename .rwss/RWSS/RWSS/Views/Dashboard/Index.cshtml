@@ -14,6 +14,8 @@
        class="btn btn-primary">Dodaj konto specjalne</a>
     <a type="button" asp-controller="Assignment" asp-action="Index"
        class="btn btn-primary">Aktywne zadania</a>
+    <a type="button" asp-controller="Duty" asp-action="Index"
+       class="btn btn-primary">Aktywne dyżury</a>
        <!--DO POPRAWY: -->
     <a type="button" asp-controller="Dashboard" asp-action="SelectDeaneryWorker" 
        class="btn btn-primary">Skontaktuj się z pracownikiem dziekanatu</a>
@@ -31,6 +33,8 @@ else if (User.Identity.IsAuthenticated && User.IsInRole("rwssuser"))
 {
     <a type="button" asp-controller="Assignment" asp-action="GetMyAssignments"
        class="btn btn-primary">Moje zadania</a>
+    <a type="button" asp-controller="Duty" asp-action="GetMyDuties"
+       class="btn btn-primary">Moje dyżury</a>
     <a type="button" asp-controller="Dashboard" asp-action="Create"
        class="btn btn-primary">Skontaktuj się z przewodniczącym RWSS</a>
 }
@@ -93,6 +97,8 @@ else if (User.Identity.IsAuthenticated && User.IsInRole("rwssuser"))
                             <p class="card-text">@item.AppUser.FirstName @item.AppUser.LastName</p>
                             <a type="button" class="btn btn-sm btn-outline-secondary" asp-area="" asp-controller="Assignment" asp-route-id="@item.Id"
                                asp-action="Create">Przydziel zadanie</a>
+                            <a type="button" class="btn btn-sm btn-outline-secondary" asp-area="" asp-controller="Duty" asp-route-id="@item.Id"
+                               asp-action="Create">Przydziel dyżur</a>
                         </div>
                     </div>
                 }

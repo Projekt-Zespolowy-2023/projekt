@@ -54,6 +54,7 @@ namespace RWSS.Controllers
             {
                 Body = createAssignmentVM.Body,
                 DateAssigned = DateTime.Now,
+                UpdateDate = DateTime.Now,
                 DateOfAssignment = createAssignmentVM.DateOfAssignment,
                 Assignee = rwssUser.AppUser,
                 Assignor = assignor.AppUser,

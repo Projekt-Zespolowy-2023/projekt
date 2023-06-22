@@ -60,6 +60,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFNlbGVjdERlYW5lcnlXb3JrZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Duty/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV0eVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Duty/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV0eVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Duty/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV0eVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Duty/GetMyDuties.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV0eVxHZXRNeUR1dGllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Duty/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV0eVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Event/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
