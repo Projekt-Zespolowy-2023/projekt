@@ -91,7 +91,6 @@ namespace RWSS.Controllers
             }
 
             var student = await _dashboardRepository.GetByIdAsyncNoTracking(id);
-            var curUserRole = student.RoleCategory;
 
             var appUser = new AppUser()
             {
@@ -118,31 +117,25 @@ namespace RWSS.Controllers
 
             _dashboardRepository.Update(appUser);
 
+            var roles = await _userManager.GetRolesAsync(appUser);
+            await _userManager.RemoveFromRolesAsync(appUser, roles.ToArray());
+
             if (appUser.RoleCategory == RoleCategory.Student)
             {
-                var roles = await _userManager.GetRolesAsync(appUser);
-                await _userManager.RemoveFromRolesAsync(appUser, roles.ToArray());
                 await _userManager.AddToRoleAsync(appUser, UserRoles.Student);
             }
             else if (appUser.RoleCategory == RoleCategory.Członek_RWSS)
             {
-                var roles = await _userManager.GetRolesAsync(appUser);
-                await _userManager.RemoveFromRolesAsync(appUser, roles.ToArray());
                 await _userManager.AddToRoleAsync(appUser, UserRoles.RWSSUser);
             }
             else if (appUser.RoleCategory == RoleCategory.Admin_RWSS)
             {
-                var roles = await _userManager.GetRolesAsync(appUser);
-                await _userManager.RemoveFromRolesAsync(appUser, roles.ToArray());
                 await _userManager.AddToRoleAsync(appUser, UserRoles.RWSSAdmin);
             }
             else
             {
-                var roles = await _userManager.GetRolesAsync(appUser);
-                await _userManager.RemoveFromRolesAsync(appUser, roles.ToArray());
                 await _userManager.AddToRoleAsync(appUser, UserRoles.DeaneryWorker);
             }
-            
 
             return RedirectToAction("Index", "Dashboard");
         }
@@ -156,91 +149,71 @@ namespace RWSS.Controllers
             {
                 return View("Error");
             }
-            var editUserViewModel = new EditUserViewModel()
+            var editUserVM = new EditUserViewModel()
             {
-                AppUserId = curUserId,
                 EmailAdress = user.Email,
                 PhoneNumber = user.PhoneNumber,
             };
-            return View(editUserViewModel);
+            return View(editUserVM);
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditUserProfile(EditUserViewModel editUserViewModel)
+        public async Task<IActionResult> EditUserProfile(EditUserViewModel editUserVM)
         {
             if (!ModelState.IsValid)
             {
-                ModelState.AddModelError("", "Failed to edit profile");
-                return View("EditUserProfile", editUserViewModel);
+                ModelState.AddModelError("", "Failed to edit student roles");
+                return View("EditUserProfile", editUserVM);
             }
 
-            var user = await _userRepository.GetAppUserByIdNoTracking(editUserViewModel.AppUserId);
-            var userRole = await _userManager.GetRolesAsync(user);
-            var newUser = new AppUser
+            var curUserId = _httpContextAccessor.HttpContext?.User.GetUserId();
+            var user = await _userRepository.GetAppUserByIdNoTracking(curUserId);
+
+            var appUser = new AppUser()
             {
                 Id = user.Id,
-                Email = editUserViewModel.EmailAdress,
-                PhoneNumber = editUserViewModel.PhoneNumber,
-                UserName = editUserViewModel.EmailAdress,
-                NormalizedUserName = editUserViewModel.EmailAdress.ToUpper(),
-                NormalizedEmail = editUserViewModel.EmailAdress.ToUpper(),
-                EmailConfirmed = user.EmailConfirmed,
-                PasswordHash = user.PasswordHash,
-                SecurityStamp = user.SecurityStamp,
-                ConcurrencyStamp = user.ConcurrencyStamp,
-                PhoneNumberConfirmed = user.PhoneNumberConfirmed,
-                TwoFactorEnabled = user.TwoFactorEnabled,
-                LockoutEnd = user.LockoutEnd,
-                LockoutEnabled = user.LockoutEnabled,
-                AccessFailedCount = user.AccessFailedCount,
-                BirthDate = user.BirthDate,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 PeselNumber = user.PeselNumber,
                 RoleCategory = user.RoleCategory,
+                BirthDate = user.BirthDate,
+                Email = editUserVM.EmailAdress,
+                NormalizedEmail = editUserVM.EmailAdress.ToUpper(),
+                PasswordHash = user.PasswordHash,
+                UserName = editUserVM.EmailAdress,
+                NormalizedUserName = editUserVM.EmailAdress.ToUpper(),
+                EmailConfirmed = user.EmailConfirmed,
+                SecurityStamp = user.SecurityStamp,
+                ConcurrencyStamp = user.ConcurrencyStamp,
+                PhoneNumber = editUserVM.PhoneNumber,
+                PhoneNumberConfirmed = user.PhoneNumberConfirmed,
+                TwoFactorEnabled = user.TwoFactorEnabled,
+                LockoutEnabled = user.LockoutEnabled,
+                AccessFailedCount = user.AccessFailedCount,
             };
+            _userRepository.Update(appUser);
 
-            if (user.RoleCategory == RoleCategory.Pracownik_Dziekanatu)
+            var roles = await _userManager.GetRolesAsync(appUser);
+            await _userManager.RemoveFromRolesAsync(appUser, roles.ToArray());
+
+            if (appUser.RoleCategory == RoleCategory.Student)
             {
-                var deaneryWorker = await _userRepository.GetDeaneryWorkerById(user.Id);
-                editUserViewModel.DeaneryWorkerId = deaneryWorker.Id;
-                editUserViewModel.PositionCategory = deaneryWorker.PositionCategory;
-                var newDW = new DeaneryWorker
-                {
-                    Id = (int)editUserViewModel.DeaneryWorkerId,
-                    PositionCategory = (PositionCategory)editUserViewModel.PositionCategory,
-                    AppUserId = user.Id,
-                    AppUser = newUser,
-                };
-                _userRepository.Update(newUser);
-				await _userManager.AddToRolesAsync(newUser, userRole);
-				_userRepository.UpdateDeaneryWorker(newDW);
-                
-                return RedirectToAction("Index", "Dashboard");
+                await _userManager.AddToRoleAsync(appUser, UserRoles.Student);
+            }
+            else if (appUser.RoleCategory == RoleCategory.Członek_RWSS)
+            {
+                await _userManager.AddToRoleAsync(appUser, UserRoles.RWSSUser);
+            }
+            else if (appUser.RoleCategory == RoleCategory.Admin_RWSS)
+            {
+                await _userManager.AddToRoleAsync(appUser, UserRoles.RWSSAdmin);
             }
             else
             {
-                var student = await _userRepository.GetStudentById(user.Id);
-                editUserViewModel.StudentId = student.Id;
-				editUserViewModel.YearCategory = student.YearCategory;
-				editUserViewModel.SemesterCategory = student.SemesterCategory;
-				editUserViewModel.DegreeCourseCategory = student.DegreeCourseCategory;
-				editUserViewModel.StudiesDegreeCategory = student.StudiesDegreeCategory;
-                var newStudent = new Student
-                {
-                    Id = (int)editUserViewModel.StudentId,
-                    YearCategory = (YearCategory)editUserViewModel.YearCategory,
-                    SemesterCategory = (SemesterCategory)editUserViewModel.SemesterCategory,
-                    DegreeCourseCategory = (DegreeCourseCategory)editUserViewModel.DegreeCourseCategory,
-                    StudiesDegreeCategory = (StudiesDegreeCategory)editUserViewModel.StudiesDegreeCategory,
-                    AppUserId = user.Id,
-                };
-                _userRepository.Update(newUser);
-				await _userManager.AddToRolesAsync(newUser, userRole);
-				_userRepository.UpdateStudent(student);
-				
-				return RedirectToAction("Index", "Dashboard");
-			}
+                await _userManager.AddToRoleAsync(appUser, UserRoles.DeaneryWorker);
+            }
+
+            return RedirectToAction("Index", "Dashboard");
         }
 
         [HttpGet]

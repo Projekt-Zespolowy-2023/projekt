@@ -2,7 +2,6 @@
 @model EditUserViewModel
 
 <form method="post" asp-action="EditUserProfile" enctype="multipart/form-data">
-    <input type="hidden" id="Id" name="Id" asp-for="AppUserId"/>
     <div class="form-group">
         <label asp-for="EmailAdress">Adres email</label>
         <input asp-for="EmailAdress" class="form-control" placeholder="Adres email">
