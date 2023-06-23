@@ -126,7 +126,7 @@ namespace RWSS.Controllers
                 return View("Error");
             }
 			_eventRepository.Delete(eventDetails);
-			return RedirectToAction("Index");
+			return RedirectToAction("Index", "Dashboard");
         }
 	}
 }
