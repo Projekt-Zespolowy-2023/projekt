@@ -1,0 +1,14 @@
+﻿@using RWSS.Data.Enum;
+@using RWSS.ViewModels.Dashboard
+@model EditDeaneryWorkerProfileViewModel
+
+<form method="post" asp-action="EditDeaneryWorkerProfile" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="PositionCategory">Pozycja w dziekanacie</label>
+        <select asp-for="PositionCategory" asp-items="@Html.GetEnumSelectList<PositionCategory>()" class="form-control">
+            <option selected="selected" value="">--Wybierz--</option>
+        </select>
+        <span asp-validation-for="PositionCategory" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Zatwierdź</button>
+</form>

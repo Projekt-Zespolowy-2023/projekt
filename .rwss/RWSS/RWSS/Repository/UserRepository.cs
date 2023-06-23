@@ -18,9 +18,19 @@ namespace RWSS.Repository
             return await _context.Students.Include(a => a.AppUser).FirstOrDefaultAsync(i => i.AppUser.Id == id);
         }
 
+        public async Task<Student> GetStudentByIdNoTracking(string id)
+        {
+            return await _context.Students.Include(a => a.AppUser).AsNoTracking().FirstOrDefaultAsync(i => i.AppUser.Id == id);
+        }
+
         public async Task<DeaneryWorker> GetDeaneryWorkerById(string id)
         {
             return await _context.DeaneryWorkers.Include(a => a.AppUser).FirstOrDefaultAsync(i => i.AppUser.Id == id);
+        }
+
+        public async Task<DeaneryWorker> GetDeaneryWorkerByIdNoTracking(string id)
+        {
+            return await _context.DeaneryWorkers.Include(a => a.AppUser).AsNoTracking().FirstOrDefaultAsync(i => i.AppUser.Id == id);
         }
 
         public async Task<AppUser> GetAppUserById(string id)

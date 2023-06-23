@@ -8,6 +8,8 @@
 <a type="button" class="btn btn-primary" asp-area="" asp-controller="Dashboard" asp-action="EditUserProfile">Edytuj profil użytkownika</a>
 @if (User.Identity.IsAuthenticated && User.IsInRole("rwssadmin"))
 {
+    <a type="button" asp-controller="Dashboard" asp-action="EditStudentProfile"
+       class="btn btn-primary">Edytuj profil studenta</a>
     <a type="button" asp-controller="Event" asp-action="Create"
        class="btn btn-primary">Dodaj wydarzenie</a>
     <a type="button" asp-controller="Account" asp-action="RegisterDeaneryWorker"
@@ -24,6 +26,8 @@
 }
 else if (User.Identity.IsAuthenticated && User.IsInRole("deaneryworker"))
 {
+    <a type="button" asp-controller="Dashboard" asp-action="EditDeaneryWorkerProfile"
+       class="btn btn-primary">Edytuj profil pracownika dziekanatu</a>
     <a type="button" asp-controller="Event" asp-action="Create"
        class="btn btn-primary">Dodaj wydarzenie</a>
     <a type="button" asp-controller="Dashboard" asp-action="SendEmail"
@@ -31,6 +35,8 @@ else if (User.Identity.IsAuthenticated && User.IsInRole("deaneryworker"))
 }
 else if (User.Identity.IsAuthenticated && User.IsInRole("rwssuser"))
 {
+    <a type="button" asp-controller="Dashboard" asp-action="EditStudentProfile"
+       class="btn btn-primary">Edytuj profil studenta</a>
     <a type="button" asp-controller="Assignment" asp-action="GetMyAssignments"
        class="btn btn-primary">Moje zadania</a>
     <a type="button" asp-controller="Duty" asp-action="GetMyDuties"

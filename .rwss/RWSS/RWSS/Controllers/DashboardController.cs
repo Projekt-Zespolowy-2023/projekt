@@ -217,6 +217,101 @@ namespace RWSS.Controllers
         }
 
         [HttpGet]
+        public async Task<IActionResult> EditStudentProfile()
+        {
+            var curUserId = _httpContextAccessor.HttpContext?.User.GetUserId();
+            var student = await _userRepository.GetStudentById(curUserId);
+            if (student == null)
+            {
+                return View("Error");
+            }
+
+            var editStudentVM = new EditStudentProfileViewModel
+            {
+                YearCategory = student.YearCategory,
+                SemesterCategory = student.SemesterCategory,
+                DegreeCourseCategory = student.DegreeCourseCategory,
+                StudiesDegreeCategory = student.StudiesDegreeCategory,
+            };
+
+            return View(editStudentVM);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditStudentProfile(EditStudentProfileViewModel editStudentVM)
+        {
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError("", "Failed to edit student profile");
+                return View("EditStudentProfile", editStudentVM);
+            }
+
+            var curUserId = _httpContextAccessor.HttpContext?.User.GetUserId();
+            var curUser = await _userRepository.GetAppUserByIdNoTracking(curUserId);
+            var student = await _userRepository.GetStudentByIdNoTracking(curUserId);
+
+            var newStudent = new Student
+            {
+                Id = student.Id,
+                AppUserId = curUserId,
+                AppUser = curUser,
+                IndexNumber = student.IndexNumber,
+                YearCategory = editStudentVM.YearCategory,
+                SemesterCategory = editStudentVM.SemesterCategory,
+                DegreeCourseCategory = editStudentVM.DegreeCourseCategory,
+                StudiesDegreeCategory = editStudentVM.StudiesDegreeCategory,
+            };
+
+            _userRepository.UpdateStudent(newStudent);
+
+            return RedirectToAction("Index", "Dashboard");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> EditDeaneryWorkerProfile()
+        {
+            var curUserId = _httpContextAccessor.HttpContext?.User.GetUserId();
+            var deaneryWorker = await _userRepository.GetDeaneryWorkerById(curUserId);
+            if (deaneryWorker == null)
+            {
+                return View("Error");
+            }
+
+            var editDeaneryWorkerVM = new EditDeaneryWorkerProfileViewModel
+            {
+                PositionCategory = deaneryWorker.PositionCategory,
+            };
+
+            return View(editDeaneryWorkerVM);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditDeaneryWorkerProfile(EditDeaneryWorkerProfileViewModel editDeaneryWorkerVM)
+        {
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError("", "Failed to edit deanery worker profile");
+                return View("EditDeaneryWorkerProfile", editDeaneryWorkerVM);
+            }
+
+            var curUserId = _httpContextAccessor.HttpContext?.User.GetUserId();
+            var curUser = await _userRepository.GetAppUserByIdNoTracking(curUserId);
+            var deaneryWorker = await _userRepository.GetDeaneryWorkerByIdNoTracking(curUserId);
+
+            var newDeaneryWorker = new DeaneryWorker
+            {
+                Id = deaneryWorker.Id,
+                AppUserId = curUserId,
+                AppUser = curUser,
+                PositionCategory = editDeaneryWorkerVM.PositionCategory,
+            };
+
+            _userRepository.UpdateDeaneryWorker(newDeaneryWorker);
+
+            return RedirectToAction("Index", "Dashboard");
+        }
+
+        [HttpGet]
         public async Task<IActionResult> SelectDeaneryWorker()
         {
             var deaneryWorkers = await _dashboardRepository.GetAllDeaneryWorkers();
