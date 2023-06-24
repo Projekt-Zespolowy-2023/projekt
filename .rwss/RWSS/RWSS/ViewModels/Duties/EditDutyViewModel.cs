@@ -17,5 +17,6 @@ namespace RWSS.ViewModels.Duties
 
         public DayOfWeek DayOfWeek { get; set; }
         public TimeOnly TimeOfDuty { get; set; }
+        public TimeOnly EndingTime { get; set; }
     }
 }

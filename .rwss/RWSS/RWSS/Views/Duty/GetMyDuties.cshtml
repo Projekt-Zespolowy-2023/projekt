@@ -11,8 +11,21 @@
                         <div class="card-body">
                             <p class="card-text">Treść: @item.Body</p>
                             <p class="card-text">Dzień tygodnia: @item.DayOfWeek</p>
-                            <p class="card-text">Godzina dyżuru: @item.TimeOfDuty</p>
+                            <p class="card-text">Godzina rozpoczęcia dyżuru: @item.TimeOfDuty</p>
+                            <p class="card-text">Godzina zakończenia dyżuru: @item.EndingTime</p>
                             <p class="card-text">Przypisano przez: @item.Assignor.FirstName @item.Assignor.LastName</p>
+                            @if (@item.DayOfWeek == DateTime.Now.DayOfWeek && item.IsStarted == false && item.IsCompleted == true &&
+                                (@item.TimeOfDuty <= TimeOnly.FromDateTime(DateTime.Now) && @item.EndingTime >= TimeOnly.FromDateTime(DateTime.Now)))
+                            {
+                                <a type="btn btn=success" asp-controller="Duty" asp-action="Register" asp-route-id="@item.Id"
+                                    class="btn btn-sm btn-outline-secondary">Rozpocznij dyżur</a>
+                            }
+                            else if (@item.DayOfWeek == DateTime.Now.DayOfWeek && item.IsStarted == true && item.IsCompleted == false &&
+                                        item.EndingTime <= TimeOnly.FromDateTime(DateTime.Now))
+                            {
+                                <a type="btn btn=success" asp-controller="Duty" asp-action="Unregister" asp-route-id="@item.Id"
+                                   class="btn btn-sm btn-outline-secondary">Zakończ dyżur</a>
+                            }
                             <div class="d-flex justify-content-between align-items-center">
                             </div>
                         </div>

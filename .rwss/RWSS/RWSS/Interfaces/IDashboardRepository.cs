@@ -13,6 +13,8 @@ namespace RWSS.Interfaces
         Task<List<Student>> GetRWSSAdmin();
         Task<AppUser> GetByIdAsync(string id);
         Task<AppUser> GetByIdAsyncNoTracking(string id);
+        Task<List<Student>> GetAllRWSSAdmins();
+        Task<List<Student>> GetAllRWSSUsers();
         Task<List<DeaneryWorker>> GetAllDeaneryWorkers();
         Task<List<DeaneryWorker>> GetAllDeaneryWorkersByPosition(PositionCategory position);
         Task<DeaneryWorker> GetDWByIdAsync(int id);

@@ -11,8 +11,19 @@
                         <div class="card-body">
                             <p class="card-text">Treść: @item.Body</p>
                             <p class="card-text">Dzień dyżuru: @item.DayOfWeek</p>
-                            <p class="card-text">Godzina dyżuru: @item.TimeOfDuty</p>
+                            <p class="card-text">Godzina rozpoczęcia dyżuru: @item.TimeOfDuty</p>
+                            <p class="card-text">Godzina zakończenia dyżuru: @item.EndingTime</p>
                             <p class="card-text">Przypisano do: @item.Assignee.FirstName @item.Assignee.LastName</p>
+                            @if (@item.DayOfWeek == DateTime.Now.DayOfWeek && item.IsStarted == true && item.IsCompleted == false &&
+                                (@item.TimeOfDuty <= TimeOnly.FromDateTime(DateTime.Now) && @item.EndingTime >= TimeOnly.FromDateTime(DateTime.Now)))
+                            {
+                                <p class="card-text">Dyżur rozpoczęty</p>
+                            }
+                            else if (@item.DayOfWeek == DateTime.Now.DayOfWeek && item.IsStarted == false && item.IsCompleted == true &&
+                                    item.EndingTime <= TimeOnly.FromDateTime(DateTime.Now))
+                            {
+                                <p class="card-text">Dyżur zakończony</p>
+                            }
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <a type="btn btn=success" asp-controller="Duty" asp-action="Edit" asp-route-id="@item.Id"

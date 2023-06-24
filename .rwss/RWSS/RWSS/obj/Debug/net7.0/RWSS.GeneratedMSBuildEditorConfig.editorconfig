@@ -28,6 +28,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlckRlYW5lcnlXb3JrZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Assignment/Complete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWdubWVudFxDb21wbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Assignment/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWdubWVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -72,6 +76,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFNlbGVjdERlYW5lcnlXb3JrZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Dashboard/SelectRWSSAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFNlbGVjdFJXU1NBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Dashboard/SelectRWSSUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFNlbGVjdFJXU1NVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Duty/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV0eVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -90,6 +102,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Duty/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV0eVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Duty/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV0eVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Duty/Unregister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV0eVxVbnJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Event/Create.cshtml]

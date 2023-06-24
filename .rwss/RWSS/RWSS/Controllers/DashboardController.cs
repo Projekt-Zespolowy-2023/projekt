@@ -1,9 +1,6 @@
-﻿using MailKit.Net.Smtp;
-using MailKit;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
-using MimeKit;
 using Org.BouncyCastle.Cms;
 using RWSS.Data;
 using RWSS.Data.Enum;
@@ -317,6 +314,22 @@ namespace RWSS.Controllers
             var deaneryWorkers = await _dashboardRepository.GetAllDeaneryWorkers();
 
             return View(deaneryWorkers);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> SelectRWSSUser()
+        {
+            var rwssUsers = await _dashboardRepository.GetAllRWSSUsers();
+
+            return View(rwssUsers);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> SelectRWSSAdmin()
+        {
+            var rwssAdmins = await _dashboardRepository.GetAllRWSSAdmins();
+
+            return View(rwssAdmins);
         }
     }
 }

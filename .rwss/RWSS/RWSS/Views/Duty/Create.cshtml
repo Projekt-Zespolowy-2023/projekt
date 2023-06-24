@@ -5,18 +5,23 @@
     <input type="hidden" id="AssigneeId" name="AssigneeId" asp-for="AssigneeId" />
     <div class="form-group">
         <label asp-for="Body">Treść dyżuru</label>
-        <input asp-for="Body" class="form-control" placeholder="Tytuł">
+        <input asp-for="Body" class="form-control" placeholder="Treść dyżuru">
         <span asp-validation-for="Body" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="DayOfWeek">Dzień dyżuru</label>
-        <input asp-for="DayOfWeek" class="form-control" placeholder="Tytuł">
+        <input asp-for="DayOfWeek" class="form-control" placeholder="Dzień tygodnia">
         <span asp-validation-for="DayOfWeek" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="TimeOfDuty">Godzina dyżuru</label>
-        <input asp-for="TimeOfDuty" class="form-control" placeholder="Tytuł">
+        <label asp-for="TimeOfDuty">Godzina rozpoczęcia dyżuru</label>
+        <input asp-for="TimeOfDuty" class="form-control" placeholder="Godzina rozpoczęcia">
         <span asp-validation-for="TimeOfDuty" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EndingTime">Godzina zakończenia dyżuru</label>
+        <input asp-for="EndingTime" class="form-control" placeholder="Godzina zakończenia">
+        <span asp-validation-for="EndingTime" class="text-danger"></span>
     </div>
     <button type="submit" class="btn btn-block btn-success btn-lg">Zatwierdź</button>
 </form>

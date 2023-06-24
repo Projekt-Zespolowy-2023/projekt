@@ -30,7 +30,7 @@ else if (User.Identity.IsAuthenticated && User.IsInRole("deaneryworker"))
        class="btn btn-primary">Edytuj profil pracownika dziekanatu</a>
     <a type="button" asp-controller="Event" asp-action="Create"
        class="btn btn-primary">Dodaj wydarzenie</a>
-    <a type="button" asp-controller="Dashboard" asp-action="SendEmail"
+    <a type="button" asp-controller="Dashboard" asp-action="SelectRWSSAdmin"
        class="btn btn-primary">Skontaktuj się z przewodniczącym RWSS</a>
 }
 else if (User.Identity.IsAuthenticated && User.IsInRole("rwssuser"))
@@ -41,8 +41,13 @@ else if (User.Identity.IsAuthenticated && User.IsInRole("rwssuser"))
        class="btn btn-primary">Moje zadania</a>
     <a type="button" asp-controller="Duty" asp-action="GetMyDuties"
        class="btn btn-primary">Moje dyżury</a>
-    <a type="button" asp-controller="Dashboard" asp-action="Create"
+    <a type="button" asp-controller="Dashboard" asp-action="SelectRWSSAdmin"
        class="btn btn-primary">Skontaktuj się z przewodniczącym RWSS</a>
+}
+else if (User.Identity.IsAuthenticated && User.IsInRole("student"))
+{
+    <a type="button" asp-controller="Dashboard" asp-action="EditStudentProfile"
+       class="btn btn-primary">Edytuj profil studenta</a>
 }
 
 <div class="album py-5 bg-light">
