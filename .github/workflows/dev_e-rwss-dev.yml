@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'e-rwss-dev'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7222579F3B2A4C3483C58ACED5BA4154 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E24C51CBF69E4C27AEBE34FBB2963744 }}
           package: .
