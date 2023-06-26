@@ -262,9 +262,6 @@ namespace RWSS.Migrations
                     b.Property<DateTime>("DateOfAssignment")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool>("IsCompleted")
-                        .HasColumnType("bit");
-
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
 
@@ -321,15 +318,6 @@ namespace RWSS.Migrations
 
                     b.Property<int>("DayOfWeek")
                         .HasColumnType("int");
-
-                    b.Property<TimeSpan>("EndingTime")
-                        .HasColumnType("time");
-
-                    b.Property<bool>("IsCompleted")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsStarted")
-                        .HasColumnType("bit");
 
                     b.Property<TimeSpan>("TimeOfDuty")
                         .HasColumnType("time");

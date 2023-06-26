@@ -6,28 +6,43 @@
 	ViewData["Title"] = "Login";
 }
 
-<div class="row">
-    <div class="col-md-6 offset-3">
+<section class="jumbotron text-center">
+    <div class="container-jumbotron">
+        <h1 class="jumbotron-heading">Logowanie</h1>
+        <div id="line-login" class="line"></div>
+        <p class="jumbotron-description">Po zalogowaniu się do usługi uzyskasz dostęp do ekskluzywnych funkcji i spersonalizowanych treści, które poprawią Twoje wrażenia. Nie przegap korzyści płynących z bycia zarejestrowanym użytkownikiem.</p>
+        <div id="jumbotron-btn" class="btn-container">
+            <a href="#login-label" class="my-butt">Zaloguj</a>
+            <a href="#contact-footer" class="my-butt">Kontakt</a>
+        </div>
+    </div>
+</section>
+
+<section class="board">
+    <div class="board-container">
+
+<div>
+    <div>
         <p>
-            <h4>Log in to your account</h4>
+            <h4 id="login-label">Zaloguj się na swoje konto</h4>
         </p>
         @if (TempData["Error"] != null)
         {
             <div class="col-md-12 alert alert-danger">
-                <span><b>Sorry!</b> - @TempData["Error"]</span>
+                <span><b>Błąd!</b> - @TempData["Error"]</span>
             </div>
         }
-        <div class="row">
-            <div class="col-md-8 offset-2">
+        <div>
+            <div id="forms" class="col-md-8 offset-2">
                 <form asp-action="Login">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="form-group">
-                        <label asp-for="EmailAddress" class="control-label"></label>
+                        <label asp-for="EmailAddress" class="control-label">Adres e-mail</label>
                         <input asp-for="EmailAddress" class="form-control">
                         <span asp-validation-for="EmailAddress" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label asp-for="Password" class="control-label"></label>
+                        <label asp-for="Password" class="control-label">Hasło</label>
                         <input asp-for="Password" class="form-control" />
                         <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
@@ -40,3 +55,6 @@
         </div>
     </div>
 </div>
+
+</div>
+</section>

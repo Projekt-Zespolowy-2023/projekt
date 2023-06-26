@@ -1,9 +1,24 @@
 ﻿@model IEnumerable<Duty>
 
-<div class="album py-5 bg-light">
-    <div class="container">
+    <section class="jumbotron text-center">
+    <div class="container-jumbotron">
+        <h1 class="jumbotron-heading">Panel użytkownika</h1>
+                <div id="line-dashboard" class="line"></div>
+                <p id="jumbotron-description-dashboard" class="jumbotron-description">Pulpit nawigacyjny zapewnia cenne informacje i narzędzia, które pomagają efektywnie zarządzać kontem. Podejmij działania już teraz, aby zoptymalizować swoje doświadczenia i jak najlepiej wykorzystać usługę.</p>
+        <div id="jumbotron-dashboard-btn" class="btn-container">
+                    <a href="#dashboard-label-id" class="my-butt">Start</a>
+                    <a href="#contact-footer" class="my-butt">Kontakt</a>
+        </div>
+    </div>
+</section>
 
-        <div class="row">
+<section class="board">
+    <div class="board-container">
+        <h1 id="dashboard-label-id" class="dashboard-label">Moje dyżury</h1>
+        <div class="form-group-container">
+<div>
+    <div>
+        <div class="form-assignment-group-container">
             @foreach (var item in Model)
             {
                 <div class="col-md-4">
@@ -11,21 +26,8 @@
                         <div class="card-body">
                             <p class="card-text">Treść: @item.Body</p>
                             <p class="card-text">Dzień tygodnia: @item.DayOfWeek</p>
-                            <p class="card-text">Godzina rozpoczęcia dyżuru: @item.TimeOfDuty</p>
-                            <p class="card-text">Godzina zakończenia dyżuru: @item.EndingTime</p>
+                            <p class="card-text">Godzina dyżuru: @item.TimeOfDuty</p>
                             <p class="card-text">Przypisano przez: @item.Assignor.FirstName @item.Assignor.LastName</p>
-                            @if (@item.DayOfWeek == DateTime.Now.DayOfWeek && item.IsStarted == false && item.IsCompleted == true &&
-                                (@item.TimeOfDuty <= TimeOnly.FromDateTime(DateTime.Now) && @item.EndingTime >= TimeOnly.FromDateTime(DateTime.Now)))
-                            {
-                                <a type="btn btn=success" asp-controller="Duty" asp-action="Register" asp-route-id="@item.Id"
-                                    class="btn btn-sm btn-outline-secondary">Rozpocznij dyżur</a>
-                            }
-                            else if (@item.DayOfWeek == DateTime.Now.DayOfWeek && item.IsStarted == true && item.IsCompleted == false &&
-                                        item.EndingTime <= TimeOnly.FromDateTime(DateTime.Now))
-                            {
-                                <a type="btn btn=success" asp-controller="Duty" asp-action="Unregister" asp-route-id="@item.Id"
-                                   class="btn btn-sm btn-outline-secondary">Zakończ dyżur</a>
-                            }
                             <div class="d-flex justify-content-between align-items-center">
                             </div>
                         </div>
@@ -35,3 +37,6 @@
         </div>
     </div>
 </div>
+</div>
+</div>
+</section>

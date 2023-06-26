@@ -1,9 +1,24 @@
 ﻿@model IEnumerable<Assignment>
 
-<div class="album py-5 bg-light">
-    <div class="container">
+<section class="jumbotron text-center">
+    <div class="container-jumbotron">
+        <h1 class="jumbotron-heading">Panel użytkownika</h1>
+        <div id="line-dashboard" class="line"></div>
+        <p id="jumbotron-description-dashboard" class="jumbotron-description">Pulpit nawigacyjny zapewnia cenne informacje i narzędzia, które pomagają efektywnie zarządzać kontem. Podejmij działania już teraz, aby zoptymalizować swoje doświadczenia i jak najlepiej wykorzystać usługę.</p>
+        <div id="jumbotron-dashboard-btn" class="btn-container">
+            <a href="#dashboard-label-id" class="my-butt">Start</a>
+            <a href="#contact-footer" class="my-butt">Kontakt</a>
+        </div>
+    </div>
+</section>
 
-        <div class="row">
+<section class="board">
+    <div class="board-container">
+        <h1 id="dashboard-label-id" class="dashboard-label">Moje zadania</h1>
+        <div class="form-group-container">
+<div>
+    <div>
+        <div class="form-assignment-group-container">
             @foreach (var item in Model)
             {
                 <div class="col-md-4">
@@ -11,13 +26,8 @@
                         <div class="card-body">
                             <p class="card-text">Treść: @item.Body</p>
                             <p class="card-text">Data zadania: @item.DateOfAssignment.ToShortDateString()</p>
-                            <p class="card-text">Zaktualizowano: @item.UpdateDate.ToShortDateString()</p>
+                            <p class="card-text">Zaktualizowano: @item.DateOfAssignment.ToShortDateString()</p>
                             <p class="card-text">Przypisano przez: @item.Assignor.FirstName @item.Assignor.LastName</p>
-                            @if (@item.DateOfAssignment <= DateTime.Now && item.IsCompleted == false)
-                            {
-                                <a type="btn btn=success" asp-controller="Assignment" asp-action="Complete" asp-route-id="@item.Id"
-                                   class="btn btn-sm btn-outline-secondary">Potwierdź zakończenie zadania</a>
-                            }
                             <div class="d-flex justify-content-between align-items-center">
                             </div>
                         </div>
@@ -27,3 +37,6 @@
         </div>
     </div>
 </div>
+</div>
+</div>
+</section>

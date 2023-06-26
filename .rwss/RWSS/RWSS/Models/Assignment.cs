@@ -19,7 +19,6 @@ namespace RWSS.Models
 
         [DataType(DataType.Date)]
         public DateTime DateOfAssignment { get; set; }
-        public bool IsCompleted { get; set; }
 
         [ForeignKey("Assignee")]
         public string? AssigneeId { get; set; } //komu przydzielony

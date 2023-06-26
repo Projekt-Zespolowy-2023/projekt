@@ -1,0 +1,39 @@
+/*
+    STYLE ASSIGNMENT VIEW
+*/
+
+/*
+    //
+    // INDEX
+    //
+*/
+#duty-container-task {
+    margin-bottom: 10rem;
+}
+
+/*
+    //
+    // EDIT
+    //
+*/
+#btn-duty-edit-task {
+    margin: 2rem 0 10rem 4rem;
+}
+
+/*
+    //
+    // DELETE
+    //
+*/
+#btn-duty-delete-task {
+    margin: 2rem 0 10rem 4rem;
+}
+
+/*
+    //
+    // CREATE
+    //
+*/
+#btn-duty-create-task {
+    margin: 2rem 0 10rem 3rem;
+}

@@ -20,9 +20,6 @@ namespace RWSS.Models
 
         public DayOfWeek DayOfWeek { get; set; }
         public TimeOnly TimeOfDuty { get; set; }
-        public bool IsStarted { get; set; }
-        public bool IsCompleted { get; set; }
-        public TimeOnly EndingTime { get; set; }
 
         [ForeignKey("Assignee")]
         public string? AssigneeId { get; set; }

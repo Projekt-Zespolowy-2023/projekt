@@ -7,10 +7,25 @@
 	ViewData["Title"] = "Sign up";
 }
 
-<div class="row">
-    <div class="col-md-6 offset-3">
+<section class="jumbotron text-center">
+    <div id="jumbotron-container" class="container-jumbotron">
+        <h1 class="jumbotron-heading">Rejestracja</h1>
+        <div id="line-register" class="line"></div>
+        <p class="jumbotron-description">Dziękujemy za obdarzenie nas zaufaniem. Życzymy powodzenia w rejestracji w usłudze i mamy nadzieję, że spełni ona wszystkie Twoje potrzeby.</p>
+        <div id="jumbotron-register-btn" class="btn-container">
+            <a href="#register-label" class="my-butt">Zarejestruj</a>
+            <a href="#contact-footer" class="my-butt">Kontakt</a>
+      </div>
+    </div>
+</section>
+
+<section class="board">
+    <div class="board-container">
+
+<div>
+    <div>
         <p>
-            <h4>Sign up for a new account</h4>
+            <h4 id="register-label">Zarejestruj się, aby założyć nowe konto</h4>
         </p>
 
         @if (TempData["Error"] != null)
@@ -20,8 +35,8 @@
             </div>
         }
 
-        <div class="row">
-            <div class="col-md-8 offset-2">
+        <div>
+            <div id="forms" class="col-md-8 offset-2">
                 <form asp-action="Register">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="form-group">
@@ -50,7 +65,7 @@
                         <span asp-validation-for="EmailAddress" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label asp-for="Password" class="control-label"></label>
+                        <label asp-for="Password" class="control-label">Hasło</label>
                         <input asp-for="Password" class="form-control" />
                         <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
@@ -99,3 +114,6 @@
         </div>
     </div>
 </div>
+
+</div>
+</section>

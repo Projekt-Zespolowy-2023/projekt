@@ -69,20 +69,6 @@ namespace RWSS.Repository
             return events.ToList();
         }
 
-        public async Task<List<Student>> GetAllRWSSAdmins()
-        {
-            var rwssAdmins = _context.Students.Include(a => a.AppUser).Where(a => a.AppUser.RoleCategory.Equals(RoleCategory.Admin_RWSS));
-
-            return rwssAdmins.ToList();
-        }
-
-        public async Task<List<Student>> GetAllRWSSUsers()
-        {
-            var rwssUsers = _context.Students.Include(a => a.AppUser).Where(a => a.AppUser.RoleCategory.Equals(RoleCategory.Członek_RWSS));
-
-            return rwssUsers.ToList();
-        }
-
         public async Task<List<DeaneryWorker>> GetAllDeaneryWorkers()
         {
             var deaneryWorkers = _context.DeaneryWorkers.Include(a => a.AppUser);
