@@ -2,11 +2,26 @@
 @using RWSS.ViewModels.Registration
 @model RegisterDeaneryWorkerViewModel
 
-<h1>Rejestracja dla dziekanatu</h1>
+<section class="jumbotron text-center">
+    <div class="container-jumbotron">
+        <h1 class="jumbotron-heading">Panel użytkownika</h1>
+        <div id="line-dashboard" class="line"></div>
+        <p id="jumbotron-description-dashboard" class="jumbotron-description">Pulpit nawigacyjny zapewnia cenne informacje i narzędzia, które pomagają efektywnie zarządzać kontem. Podejmij działania już teraz, aby zoptymalizować swoje doświadczenia i jak najlepiej wykorzystać usługę.</p>
+        <div id="jumbotron-dashboard-btn" class="btn-container">
+            <a href="#dashboard-label-id" class="my-butt">Start</a>
+            <a href="#contact-footer" class="my-butt">Kontakt</a>
+        </div>
+    </div>
+</section>
 
-<div class="row">
-    <div class="row">
-        <div class="col-md-8 offset-2">
+<section class="board">
+    <div class="board-container">
+        <h1 id="dashboard-label-id" class="dashboard-label">Rejestracja dla dziekanatu</h1>
+        <div class="form-group-container">
+
+<div>
+    <div>
+        <div>
             <form asp-action="RegisterDeaneryWorker">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group">
@@ -51,9 +66,14 @@
                     </select>
                     <span asp-validation-for="PositionCategory" class="text-danger"></span>
                 </div>
+                <div id="btn-registerDeaeryWorker">
                 <input class="btn btn-outline-success float-right" type="submit" value="Utwórz konto specjalne!" />
                 <a class="btn btn-outline-secondary" asp-controller="Dashboard" asp-action="Index">Anuluj</a>
+                </div>
             </form>
+            </div>
         </div>
     </div>
 </div>
+</div>
+</section>

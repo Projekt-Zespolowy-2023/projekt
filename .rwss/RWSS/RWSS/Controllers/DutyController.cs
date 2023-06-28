@@ -59,9 +59,6 @@ namespace RWSS.Controllers
                 UpdateDate = DateTime.Now,
                 DayOfWeek = createDutyVM.DayOfWeek,
                 TimeOfDuty = createDutyVM.TimeOfDuty,
-                IsStarted = false,
-                IsCompleted = true,
-                EndingTime = createDutyVM.EndingTime,
                 Assignee = rwssUser.AppUser,
                 Assignor = assignor.AppUser,
             };
@@ -92,7 +89,6 @@ namespace RWSS.Controllers
                 DateAssigned = duty.DateAssigned,
                 DayOfWeek = duty.DayOfWeek,
                 TimeOfDuty = duty.TimeOfDuty,
-                EndingTime = duty.EndingTime,
             };
             return View(dutyVM);
         }
@@ -125,7 +121,6 @@ namespace RWSS.Controllers
                 UpdateDate = DateTime.Now,
                 DayOfWeek = dutyVM.DayOfWeek,
                 TimeOfDuty = dutyVM.TimeOfDuty,
-                EndingTime = dutyVM.EndingTime,
             };
             _dutyRepository.Update(duty);
             return RedirectToAction("Index", "Dashboard");
@@ -152,56 +147,6 @@ namespace RWSS.Controllers
             }
             _dutyRepository.Delete(dutyDetails);
             return RedirectToAction("Index");
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> Register(int id)
-        {
-            var duty = await _dutyRepository.GetByIdAsync(id);
-            if (duty == null)
-            {
-                return View("Error");
-            }
-            return View(duty);
-        }
-
-        [HttpPost, ActionName("Register")]
-        public async Task<IActionResult> RegisterDuty(int id)
-        {
-            var duty = await _dutyRepository.GetByIdAsyncNoTracking(id);
-            if (duty == null)
-            {
-                return View("Error");
-            }
-            duty.IsStarted = true;
-            duty.IsCompleted = false;
-            _dutyRepository.Update(duty);
-            return RedirectToAction("Index", "Dashboard");
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> Unregister(int id)
-        {
-            var duty = await _dutyRepository.GetByIdAsync(id);
-            if (duty == null)
-            {
-                return View("Error");
-            }
-            return View(duty);
-        }
-
-        [HttpPost, ActionName("Unregister")]
-        public async Task<IActionResult> UnregisterDuty(int id)
-        {
-            var duty = await _dutyRepository.GetByIdAsyncNoTracking(id);
-            if (duty == null)
-            {
-                return View("Error");
-            }
-            duty.IsStarted = false;
-            duty.IsCompleted = true;
-            _dutyRepository.Update(duty);
-            return RedirectToAction("Index","Dashboard");
         }
     }
 }

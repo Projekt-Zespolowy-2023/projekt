@@ -5,12 +5,124 @@
       "PackagePath": "staticwebassets\\RWSS.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\icons\\facebook.png",
+      "PackagePath": "staticwebassets\\assets\\icons\\facebook.png"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\icons\\instagram.png",
+      "PackagePath": "staticwebassets\\assets\\icons\\instagram.png"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\icons\\rwss_icon.png",
+      "PackagePath": "staticwebassets\\assets\\icons\\rwss_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\icons\\website.png",
+      "PackagePath": "staticwebassets\\assets\\icons\\website.png"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_13.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_14.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\img_2.png"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\pan_pawel.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pan_pawel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\css\\account.css",
+      "PackagePath": "staticwebassets\\css\\account.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\css\\assignment.css",
+      "PackagePath": "staticwebassets\\css\\assignment.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\css\\duty.css",
+      "PackagePath": "staticwebassets\\css\\duty.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\css\\event.css",
+      "PackagePath": "staticwebassets\\css\\event.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\css\\shared.css",
+      "PackagePath": "staticwebassets\\css\\shared.css"
+    },
+    {
       "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\favicon2.ico",
+      "PackagePath": "staticwebassets\\favicon2.ico"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\favicon_rwss.ico",
+      "PackagePath": "staticwebassets\\favicon_rwss.ico"
     },
     {
       "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\js\\site.js",

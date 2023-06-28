@@ -2,6 +2,22 @@
 @using RWSS.ViewModels.Events
 @model CreateEventViewModel
 
+<section class="jumbotron text-center">
+    <div class="container-jumbotron">
+        <h1 class="jumbotron-heading">Panel użytkownika</h1>
+        <div id="line-dashboard" class="line"></div>
+        <p id="jumbotron-description-dashboard" class="jumbotron-description">Pulpit nawigacyjny zapewnia cenne informacje i narzędzia, które pomagają efektywnie zarządzać kontem. Podejmij działania już teraz, aby zoptymalizować swoje doświadczenia i jak najlepiej wykorzystać usługę.</p>
+        <div id="jumbotron-dashboard-btn" class="btn-container">
+            <a href="#dashboard-label-id" class="my-butt">Start</a>
+            <a href="#contact-footer" class="my-butt">Kontakt</a>
+        </div>
+    </div>
+</section>
+
+<section class="board">
+    <div class="board-container">
+        <h1 id="dashboard-label-id" class="dashboard-label">Dodaj wydarzenie</h1>
+        <div class="form-group-container">
 <form method="post" asp-action="Create">
     <input type="hidden" id="AppUserId" name="AppUserId" asp-for="AppUserId" />
     <div class="form-group">
@@ -40,5 +56,8 @@
         </select>
         <span asp-validation-for="YearCategory" class="text-danger"></span>
     </div>
-    <button type="submit" class="btn btn-block btn-success btn-lg">Zatwierdź</button>
+                <button id="btn-event-create" type="submit" class="btn btn-block btn-success btn-lg">Zatwierdź</button>
 </form>
+</div>
+</div>
+</section>

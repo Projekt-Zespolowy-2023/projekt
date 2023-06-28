@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RWSS.Interfaces;
 using RWSS.Models;
-using RWSS.Repository;
 using RWSS.ViewModels.Assignment;
 
 namespace RWSS.Controllers
@@ -57,7 +56,6 @@ namespace RWSS.Controllers
                 DateAssigned = DateTime.Now,
                 UpdateDate = DateTime.Now,
                 DateOfAssignment = createAssignmentVM.DateOfAssignment,
-                IsCompleted = false,
                 Assignee = rwssUser.AppUser,
                 Assignor = assignor.AppUser,
             };
@@ -146,30 +144,6 @@ namespace RWSS.Controllers
             }
             _assignmentRepository.Delete(assignmentDetails);
             return RedirectToAction("Index");
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> Complete(int id)
-        {
-            var assignment = await _assignmentRepository.GetByIdAsync(id);
-            if (assignment == null)
-            {
-                return View("Error");
-            }
-            return View(assignment);
-        }
-
-        [HttpPost, ActionName("Complete")]
-        public async Task<IActionResult> CompleteAssignment(int id)
-        {
-            var assignment = await _assignmentRepository.GetByIdAsyncNoTracking(id);
-            if (assignment == null)
-            {
-                return View("Error");
-            }
-            assignment.IsCompleted = true;
-            _assignmentRepository.Update(assignment);
-            return RedirectToAction("Index", "Dashboard");
         }
     }
 }

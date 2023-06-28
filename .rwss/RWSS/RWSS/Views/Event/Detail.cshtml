@@ -1,17 +1,30 @@
 ﻿@model Event
 
+<section class="jumbotron text-center">
+    <div class="container-jumbotron">
+        <h1 class="jumbotron-heading">Panel użytkownika</h1>
+        <div id="line-dashboard" class="line"></div>
+        <p id="jumbotron-description-dashboard" class="jumbotron-description">Pulpit nawigacyjny zapewnia cenne informacje i narzędzia, które pomagają efektywnie zarządzać kontem. Podejmij działania już teraz, aby zoptymalizować swoje doświadczenia i jak najlepiej wykorzystać usługę.</p>
+        <div id="jumbotron-dashboard-btn" class="btn-container">
+            <a href="#event-detail-id" class="my-butt">Start</a>
+            <a href="#contact-footer" class="my-butt">Kontakt</a>
+        </div>
+    </div>
+</section>
+
+<section class="board">
+    <div class="board-container">
 <!-- Page Content -->
 <div class="container">
 
     <!-- Portfolio Item Heading -->
-    <h1 class="my-4">Szczegóły Wydarzenia
-    </h1>
+    <h1 id="event-detail-id" class="my-4">Szczegóły Wydarzenia</h1>
   
     <!-- Portfolio Item Row -->
-    <div class="row">
-  
-      <div class="col-md-4">
-            <h3 class="my-3">@Model.Title - @Model.EventDate.ToShortDateString()</h3>
+    <div>
+
+      <div class="event-detail-container">
+        <h3 class="my-3">@Model.Title - @Model.EventDate.ToShortDateString() </h3>
         <p>@Model.Description</p>
         <h3 class="my-3">Kategoria wydarzenia</h3>
         <ul>
@@ -26,3 +39,6 @@
   
   </div>
   <!-- /.container -->
+
+</div>
+</section>

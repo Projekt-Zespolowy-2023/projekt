@@ -1,0 +1,127 @@
+/*
+    STYLE DASHBOARD VIEW
+*/
+
+/* SLIDER TEXT AND BUTTONS */
+#jumbotron-dashboard-btn {
+    margin-left: -74%;
+    margin-top: 3%;
+}
+
+#line-dashboard {
+    border-left: 6px solid #FFFDFA;
+    height: 3.5rem;
+    position: absolute;
+    margin-left: 1%;
+    top: -4rem;
+    border-radius: 10px;
+}
+
+#jumbotron-description-dashboard {
+    max-width: 95%;
+}
+
+/* DASHBOARD */
+.dashboard-label {
+    position: absolute;
+}
+
+.btn-dashboard {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    padding-top: 3%;
+    margin-right: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 0.2rem;
+}
+
+    .btn-dashboard:hover {
+        background-color: rgba(64, 64, 64, 0.5);
+    }
+
+/* PANEL BUTTONS */
+.btn-dashboard-container {
+    position: absolute;
+    display: flex;
+    height: 15rem;
+    top: 5%;
+    padding: 5%;
+    text-align: center;
+    justify-content: center;
+}
+
+/*
+.btn-dashboard-container-deaneryworker {
+    position: absolute;
+    display: flex;
+    height: 15rem;
+    width: 65rem;
+    top: 5%;
+    padding: 5% 6% 6% 6%;
+    text-align: center;
+    justify-content: center;
+}
+*/
+
+.all-events {
+    margin-top: 15rem;
+}
+
+.all-events-h2 {
+    margin: 2rem;
+}
+
+.mb-4 {
+    padding: 1.5rem;
+}
+
+#duty-assignment-group {
+    margin-left: 15rem;
+}
+
+/* EditUserProfile DASHBOARD*/
+.form-group-container {
+    margin-top: 10%;
+}
+
+.form-group {
+    margin-top: 1rem;
+}
+
+#btn-editUserProfile {
+    margin: 2rem 0 10rem 4rem;
+}
+
+/* EditStudentProfile */
+#btn-editStudentProfile {
+    margin: 2rem 0 10rem 1rem;
+}
+
+/*
+    //
+    // SELECT DEANERY WORKER
+    //
+*/
+#selectDeaneryWorker-container-task {
+    margin-bottom: 10rem;
+}
+
+/*
+    //
+    // EDIT PROFILE ROLES
+    //
+*/
+#btn-editProfileRoles {
+    margin: 2rem 0 10rem 3rem;
+}
+
+/*
+    //
+    // EDIT DEANERY WORKER PROFILE
+    //
+*/
+#btn-editDeaneryWorkerProfile {
+    margin: 2rem 0 10rem 2rem;
+}
