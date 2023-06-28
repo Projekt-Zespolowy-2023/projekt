@@ -1,0 +1,63 @@
+﻿@using RWSS.Data.Enum
+@using RWSS.ViewModels.Events
+@model CreateEventViewModel
+
+<section class="jumbotron text-center">
+    <div class="container-jumbotron">
+        <h1 class="jumbotron-heading">Panel użytkownika</h1>
+        <div id="line-dashboard" class="line"></div>
+        <p id="jumbotron-description-dashboard" class="jumbotron-description">Pulpit nawigacyjny zapewnia cenne informacje i narzędzia, które pomagają efektywnie zarządzać kontem. Podejmij działania już teraz, aby zoptymalizować swoje doświadczenia i jak najlepiej wykorzystać usługę.</p>
+        <div id="jumbotron-dashboard-btn" class="btn-container">
+            <a href="#dashboard-label-id" class="my-butt">Start</a>
+            <a href="#contact-footer" class="my-butt">Kontakt</a>
+        </div>
+    </div>
+</section>
+
+<section class="board">
+    <div class="board-container">
+        <h1 id="dashboard-label-id" class="dashboard-label">Dodaj wydarzenie</h1>
+        <div class="form-group-container">
+<form method="post" asp-action="Create">
+    <input type="hidden" id="AppUserId" name="AppUserId" asp-for="AppUserId" />
+    <div class="form-group">
+        <label asp-for="Title">Tytuł</label>
+        <input asp-for="Title" class="form-control" placeholder="Tytuł">
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description">Opis</label>
+        <input asp-for="Description" class="form-control" placeholder="Opis">
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EventCategory">Kategoria wydarzenia</label>
+        <select asp-for="EventCategory" asp-items="@Html.GetEnumSelectList<EventCategory>()" class="form-control">
+            <option selected="selected" value="">--Wybierz--</option>
+        </select>
+        <span asp-validation-for="EventCategory" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PlaceOfEventCategory">Miejsce wydarzenia</label>
+        <select asp-for="PlaceOfEventCategory" asp-items="@Html.GetEnumSelectList<PlaceOfEventCategory>()" class="form-control">
+            <option selected="selected" value="">--Wybierz--</option>
+        </select>
+        <span asp-validation-for="PlaceOfEventCategory" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EventDate" class="control-label">Data wydarzenia</label>
+        <input asp-for="EventDate" class="form-control" />
+        <span asp-validation-for="EventDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="YearCategory">Studentów którego roku dotyczy wydarzenie</label>
+        <select asp-for="YearCategory" asp-items="@Html.GetEnumSelectList<YearCategory>()" class="form-control">
+            <option selected="selected" value="">--Wybierz--</option>
+        </select>
+        <span asp-validation-for="YearCategory" class="text-danger"></span>
+    </div>
+                <button id="btn-event-create" type="submit" class="btn btn-block btn-success btn-lg">Zatwierdź</button>
+</form>
+</div>
+</div>
+</section>

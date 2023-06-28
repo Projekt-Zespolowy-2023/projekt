@@ -1,0 +1,377 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\RWSS.bundle.scp.css",
+      "PackagePath": "staticwebassets\\RWSS.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\icons\\facebook.png",
+      "PackagePath": "staticwebassets\\assets\\icons\\facebook.png"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\icons\\instagram.png",
+      "PackagePath": "staticwebassets\\assets\\icons\\instagram.png"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\icons\\rwss_icon.png",
+      "PackagePath": "staticwebassets\\assets\\icons\\rwss_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\icons\\website.png",
+      "PackagePath": "staticwebassets\\assets\\icons\\website.png"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_13.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_14.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\img_2.png"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\img_9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img_9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\assets\\img\\pan_pawel.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pan_pawel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\css\\account.css",
+      "PackagePath": "staticwebassets\\css\\account.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\css\\assignment.css",
+      "PackagePath": "staticwebassets\\css\\assignment.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\css\\duty.css",
+      "PackagePath": "staticwebassets\\css\\duty.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\css\\event.css",
+      "PackagePath": "staticwebassets\\css\\event.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\css\\shared.css",
+      "PackagePath": "staticwebassets\\css\\shared.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\favicon2.ico",
+      "PackagePath": "staticwebassets\\favicon2.ico"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\favicon_rwss.ico",
+      "PackagePath": "staticwebassets\\favicon_rwss.ico"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\przem\\source\\repos\\projekt\\.rwss\\RWSS\\RWSS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.RWSS.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.RWSS.props",
+      "PackagePath": "build\\RWSS.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.RWSS.props",
+      "PackagePath": "buildMultiTargeting\\RWSS.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.RWSS.props",
+      "PackagePath": "buildTransitive\\RWSS.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

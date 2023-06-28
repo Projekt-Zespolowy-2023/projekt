@@ -1,0 +1,48 @@
+/*
+    STYLE ASSIGNMENT VIEW
+*/
+
+.col-md-4 {
+    width: 50rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+#assignment-container {
+    margin-bottom: 10rem;
+}
+
+#duty-container-task {
+    margin-bottom: 10rem;
+}
+
+/*
+    //
+    // EDIT
+    //
+*/
+#btn-assignment-edit-task {
+    margin: 2rem 0 10rem 4rem;
+}
+
+/*
+    //
+    // CREATE
+    //
+*/
+#btn-assignment-create-task {
+    margin: 2rem 0 10rem 3rem;
+}
+
+/*
+    //
+    // DELETE
+    //
+*/
+#btn-assignment-delete-task {
+    margin: 2rem 0 10rem 4rem;
+}
+
+.form-assignment-group-container {
+    margin-bottom: 10rem;
+}

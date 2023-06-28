@@ -1,0 +1,16 @@
+﻿@model Duty
+
+<form method="post" asp-action="Register" enctype="multipart/form-data">
+<div class="col-md-4">
+    <div class="card mb-4 box-shadow">
+        <div class="card-body">
+            <p class="card-text">Treść: @Model.Body</p>
+            <p class="card-text">Dzień tygodnia: @Model.DayOfWeek</p>
+            <p class="card-text">Godzina rozpoczęcia dyżuru: @Model.TimeOfDuty</p>
+            <p class="card-text">Godzina zakończenia dyżuru: @Model.TimeOfDuty</p>
+            <button type="submit" class="btn btn-primary">Potwierdź rozpoczęcie dyżuru</button>
+            <div class="d-flex justify-content-between align-items-center"></div>
+        </div>
+    </div>
+</div>
+</form>

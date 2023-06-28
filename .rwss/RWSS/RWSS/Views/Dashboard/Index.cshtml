@@ -1,0 +1,223 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using RWSS.ViewModels.Dashboard
+@inject SignInManager<AppUser> SignInManager
+
+@model DashboardViewModel
+
+<section class="jumbotron text-center">
+    <div class="container-jumbotron">
+        <h1 class="jumbotron-heading">Panel użytkownika</h1>
+        <div id="line-dashboard" class="line"></div>
+        <p id="jumbotron-description-dashboard" class="jumbotron-description">Pulpit nawigacyjny zapewnia cenne informacje i narzędzia, które pomagają efektywnie zarządzać kontem. Podejmij działania już teraz, aby zoptymalizować swoje doświadczenia i jak najlepiej wykorzystać usługę.</p>
+        <div id="jumbotron-dashboard-btn" class="btn-container">
+            <a href="#dashboard-label-id" class="my-butt">Start</a>
+        <a href="#contact-footer" class="my-butt">Kontakt</a>
+      </div>
+    </div>
+</section>
+
+<section class="board">
+    <div class="board-container">
+<h1 id="dashboard-label-id" class="dashboard-label">Panel administracyjny</h1>
+        <div class="btn-dashboard-container btn-dashboard-container-deaneryworker">
+        <a type="button" class="btn-dashboard" asp-area="" asp-controller="Dashboard" asp-action="EditUserProfile">Edytuj profil użytkownika</a>
+@if (User.Identity.IsAuthenticated && User.IsInRole("rwssadmin"))
+{
+    <a type="button" asp-controller="Dashboard" asp-action="EditStudentProfile"
+       class="btn-dashboard">Edytuj profil studenta</a>
+    <a type="button" asp-controller="Event" asp-action="Create"
+           class="btn-dashboard">Dodaj wydarzenie</a>
+    <a type="button" asp-controller="Account" asp-action="RegisterDeaneryWorker"
+           class="btn-dashboard">Dodaj konto specjalne</a>
+    <a type="button" asp-controller="Assignment" asp-action="Index"
+           class="btn-dashboard">Aktywne zadania</a>
+    <a type="button" asp-controller="Duty" asp-action="Index"
+           class="btn-dashboard">Aktywne dyżury</a>
+       <!--DO POPRAWY: -->
+    <a type="button" asp-controller="Dashboard" asp-action="SelectDeaneryWorker"
+           class="btn-dashboard">Skontaktuj się z pracownikiem dziekanatu</a>
+    <a type="button" asp-controller="Dashboard" asp-action="SelectRWSSUser"
+           class="btn-dashboard">Skontaktuj się z członkiem RWSS</a>
+}
+else if (User.Identity.IsAuthenticated && User.IsInRole("deaneryworker"))
+{
+    <a type="button" asp-controller="Dashboard" asp-action="EditDeaneryWorkerProfile"
+           class="btn-dashboard">Edytuj profil pracownika dziekanatu</a>
+    <a type="button" asp-controller="Event" asp-action="Create"
+           class="btn-dashboard">Dodaj wydarzenie</a>
+    <a type="button" asp-controller="Dashboard" asp-action="SendEmail"
+           class="btn-dashboard">Skontaktuj się z przewodniczącym RWSS</a>
+}
+else if (User.Identity.IsAuthenticated && User.IsInRole("rwssuser"))
+{
+    <a type="button" asp-controller="Dashboard" asp-action="EditStudentProfile"
+           class="btn-dashboard">Edytuj profil studenta</a>
+    <a type="button" asp-controller="Assignment" asp-action="GetMyAssignments"
+           class="btn-dashboard">Moje zadania</a>
+    <a type="button" asp-controller="Duty" asp-action="GetMyDuties"
+           class="btn-dashboard">Moje dyżury</a>
+    <a type="button" asp-controller="Dashboard" asp-action="Create"
+           class="btn-dashboard">Skontaktuj się z przewodniczącym RWSS</a>
+}
+</div>
+
+<div class="album py-5">
+
+            @if (User.Identity.IsAuthenticated && User.IsInRole("rwssadmin"))
+            {
+                <div class="all-events">
+                <h2 class="all-events-h2">Wszystkie wydarzenia:</h2>
+                <div>
+                @foreach (var item in Model.Events)
+                {
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <p class="card-text">@item.Title</p>
+                            <p class="card-text">@item.EventDate.ToShortDateString()</p>
+                            <p class="card-text">@item.EventCategory</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a type="btn btn=success" asp-controller="Event" asp-action="Detail" asp-route-id="@item.Id"
+                                    class="btn btn-sm btn-outline-secondary">Szczegóły</a>
+                                <a type="btn btn=success" asp-controller="Event" asp-action="Edit" asp-route-id="@item.Id"
+                                    class="btn btn-sm btn-outline-secondary">Edytuj</a>
+                                <a type="btn btn=success" asp-controller="Event" asp-action="Delete" asp-route-id="@item.Id"
+                                    class="btn btn-sm btn-outline-secondary">Usuń</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+                </div>
+                </div>
+                <h2 class="all-events-h2">Lista studentów:</h2>
+                <h10>Indeks:  Imię:    Nazwisko:</h10>
+                @foreach (var item in Model.Students)
+                {
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <p class="card-text">@item.IndexNumber @item.AppUser.FirstName @item.AppUser.LastName @item.AppUser.RoleCategory</p>
+                                <a type="button" class="btn btn-sm btn-outline-secondary" asp-area="" asp-controller="Dashboard"
+                                     asp-action="EditProfileRoles" asp-route-id="@item.AppUser.Id">Edytuj rolę użytkownika</a>
+                        </div>
+                    </div>
+                }
+                <h2 class="all-events-h2">Lista pracowników dziekanatu:</h2>
+                <h10>Pozycja:  Imię:    Nazwisko:</h10>
+                @foreach (var item in Model.DeaneryWorkers)
+                {
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <p class="card-text">@item.PositionCategory @item.AppUser.FirstName @item.AppUser.LastName</p>
+                        </div>
+                    </div>
+                }
+                <h2 class="all-events-h2">Lista członków RWSS:</h2>
+                <h10>Imię:    Nazwisko:</h10>
+                @foreach (var item in Model.RWSSStudents)
+                {
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <p class="card-text">@item.AppUser.FirstName @item.AppUser.LastName</p>
+                            <div id="duty-assignment-group">
+                            <a type="button" class="btn btn-sm btn-outline-secondary" asp-area="" asp-controller="Assignment" asp-route-id="@item.Id"
+                               asp-action="Create">Przydziel zadanie</a>
+                            <a type="button" class="btn btn-sm btn-outline-secondary" asp-area="" asp-controller="Duty" asp-route-id="@item.Id"
+                               asp-action="Create">Przydziel dyżur</a>
+                             </div>
+                        </div>
+                    </div>
+                }
+            }
+            else if (User.Identity.IsAuthenticated && User.IsInRole("deaneryworker"))
+            {
+                <div class="all-events">
+                    <h2 class="all-events-h2">Wszystkie wydarzenia:</h2>
+                    <div>
+                        @foreach (var item in Model.Events)
+                        {
+                            <div>
+                                <div class="card mb-4 box-shadow">
+                                    <p class="card-text">@item.Title</p>
+                                    <p class="card-text">@item.EventDate.ToShortDateString()</p>
+                                    <p class="card-text">@item.EventCategory</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a type="btn btn=success" asp-controller="Event" asp-action="Detail" asp-route-id="@item.Id"
+                                           class="btn btn-sm btn-outline-secondary">Szczegóły</a>
+                                        <a type="btn btn=success" asp-controller="Event" asp-action="Edit" asp-route-id="@item.Id"
+                                           class="btn btn-sm btn-outline-secondary">Edytuj</a>
+                                        <a type="btn btn=success" asp-controller="Event" asp-action="Delete" asp-route-id="@item.Id"
+                                           class="btn btn-sm btn-outline-secondary">Usuń</a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <h2 class="all-events-h2">Lista studentów:</h2>
+                <h10>Indeks:  Imię:    Nazwisko:</h10>
+                @foreach (var item in Model.Students)
+                {
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <p class="card-text">@item.IndexNumber @item.AppUser.FirstName @item.AppUser.LastName @item.AppUser.RoleCategory</p>
+                        </div>
+                    </div>
+                }
+                <h2 class="all-events-h2">Lista pracowników dziekanatu:</h2>
+                <h10>Pozycja:  Imię:    Nazwisko:</h10>
+                @foreach (var item in Model.DeaneryWorkers)
+                {
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <p class="card-text">@item.PositionCategory @item.AppUser.FirstName @item.AppUser.LastName</p>
+                        </div>
+                    </div>
+                }
+            }
+            else if (User.Identity.IsAuthenticated && User.IsInRole("rwssuser"))
+            {
+                <div class="all-events">
+                    <h2 class="all-events-h2">Moje wydarzenia</h2>
+                <div>
+                @foreach (var item in Model.UserEvents)
+                {
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <p class="card-text">@item.Title</p>
+                            <p class="card-text">@item.EventDate.ToShortDateString()</p>
+                            <p class="card-text">@item.EventCategory</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a type="btn btn=success" asp-controller="Event" asp-action="Detail" asp-route-id="@item.Id"
+                                   class="btn btn-sm btn-outline-secondary">Szczegóły</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+                </div>
+                </div>
+            }
+            else if (User.Identity.IsAuthenticated && User.IsInRole("student"))
+            {
+                <div class="all-events">
+                    <h2 class="all-events-h2">Moje wydarzenia</h2>
+                <div>
+                @foreach (var item in Model.UserEvents)
+                {
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <p class="card-text">@item.Title</p>
+                            <p class="card-text">@item.EventDate.ToShortDateString()</p>
+                            <p class="card-text">@item.EventCategory</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a type="btn btn=success" asp-controller="Event" asp-action="Detail" asp-route-id="@item.Id"
+                                   class="btn btn-sm btn-outline-secondary">Szczegóły</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+                </div>
+                </div>
+            }
+            
+        </div>
+</div>
+</section>

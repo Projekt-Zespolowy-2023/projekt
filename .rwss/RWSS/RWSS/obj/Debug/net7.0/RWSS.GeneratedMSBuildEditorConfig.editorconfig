@@ -1,0 +1,161 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RWSS
+build_property.RootNamespace = RWSS
+build_property.ProjectDir = C:\Users\przem\source\repos\projekt\.rwss\RWSS\RWSS\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\przem\source\repos\projekt\.rwss\RWSS\RWSS
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Account/RegisterDeaneryWorker.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlckRlYW5lcnlXb3JrZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Assignment/Complete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWdubWVudFxDb21wbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Assignment/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWdubWVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Assignment/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWdubWVudFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Assignment/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWdubWVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Assignment/GetMyAssignments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWdubWVudFxHZXRNeUFzc2lnbm1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Assignment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWdubWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Dashboard/EditDeaneryWorkerProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEVkaXREZWFuZXJ5V29ya2VyUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Dashboard/EditProfileRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEVkaXRQcm9maWxlUm9sZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Dashboard/EditStudentProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEVkaXRTdHVkZW50UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Dashboard/EditUserProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEVkaXRVc2VyUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Dashboard/SelectDeaneryWorker.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFNlbGVjdERlYW5lcnlXb3JrZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Dashboard/SelectRWSSAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFNlbGVjdFJXU1NBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Dashboard/SelectRWSSUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFNlbGVjdFJXU1NVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Duty/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV0eVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Duty/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV0eVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Duty/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV0eVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Duty/GetMyDuties.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV0eVxHZXRNeUR1dGllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Duty/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV0eVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Duty/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV0eVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Duty/Unregister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV0eVxVbnJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Event/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Event/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Event/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Event/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Event/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/przem/source/repos/projekt/.rwss/RWSS/RWSS/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-fgg2evn0h7

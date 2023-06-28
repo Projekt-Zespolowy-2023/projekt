@@ -1,0 +1,66 @@
+/*
+    STYLE ACCOUNT VIEW
+*/
+
+/*
+    //
+    // LOGIN
+    //
+*/
+
+.row-content {
+    margin-left: -50rem;
+    width: 100%;
+}
+
+.form-group {
+    padding-bottom: 0.5rem;
+}
+
+#forms {
+    padding-bottom: 20rem;
+    padding-top: 0.5rem;
+}
+
+#jumbotron-btn {
+    margin-left: -72%;
+    margin-top: 3%;
+}
+
+#line-login {
+    border-left: 6px solid #FFFDFA;
+    height: 3.5rem;
+    position: absolute;
+    margin-left: 1%;
+    top: -4rem;
+    border-radius: 10px;
+}
+
+/*
+    //
+    // REGISTER
+    //
+*/
+
+#line-register {
+    border-left: 6px solid #FFFDFA;
+    height: 3.5rem;
+    position: absolute;
+    margin-left: 1%;
+    top: -3rem;
+    border-radius: 10px;
+}
+
+#jumbotron-register-btn {
+    margin-left: -65%;
+    margin-top: 3%;
+}
+
+/*
+    //
+    // REGISTER DEANERY WORKER
+    //
+*/
+#btn-registerDeaeryWorker {
+    margin: 2rem 0 10rem 0;
+}

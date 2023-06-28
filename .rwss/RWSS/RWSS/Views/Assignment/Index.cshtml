@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Assignment>
+
+<section class="jumbotron text-center">
+    <div class="container-jumbotron">
+        <h1 class="jumbotron-heading">Panel użytkownika</h1>
+                <div id="line-dashboard" class="line"></div>
+                <p id="jumbotron-description-dashboard" class="jumbotron-description">Pulpit nawigacyjny zapewnia cenne informacje i narzędzia, które pomagają efektywnie zarządzać kontem. Podejmij działania już teraz, aby zoptymalizować swoje doświadczenia i jak najlepiej wykorzystać usługę.</p>
+        <div id="jumbotron-dashboard-btn" class="btn-container">
+                    <a href="#dashboard-label-id" class="my-butt">Start</a>
+                    <a href="#contact-footer" class="my-butt">Kontakt</a>
+        </div>
+    </div>
+</section>
+
+<section class="board">
+    <div class="board-container">
+        <h1 id="dashboard-label-id" class="dashboard-label">Aktywne zadania</h1>
+        <div class="form-group-container">
+<div>
+    <div>
+
+        <div id="duty-container-task">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-body">
+                            <p class="card-text">Treść: @item.Body</p>
+                            <p class="card-text">Przypisano do: @item.Assignee.FirstName @item.Assignee.LastName</p>
+                            @if (@item.IsCompleted == false)
+                            {
+                                <p class="card-text">Status zadania: W trakcie</p>
+                            }
+                            else
+                            {
+							    <p class="card-text">Status zadania: Ukończono</p>
+                            }
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a type="btn btn=success" asp-controller="Assignment" asp-action="Edit" asp-route-id="@item.Id"
+                                       class="btn btn-sm btn-outline-secondary">Edytuj</a>
+                                    <a type="btn btn=success" asp-controller="Assignment" asp-action="Delete" asp-route-id="@item.Id"
+                                       class="btn btn-sm btn-outline-secondary">Usuń</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</section>

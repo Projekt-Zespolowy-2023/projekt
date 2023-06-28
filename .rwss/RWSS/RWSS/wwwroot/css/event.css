@@ -1,0 +1,38 @@
+/*
+    STYLE EVENT VIEW
+*/
+
+#btn-event-create {
+    margin: 2rem 0 10rem 6rem;
+}
+
+/*
+    //
+    // DETAIL
+    //
+*/
+.event-detail-container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+}
+
+/*
+    //
+    // EDIT
+    //
+*/
+#btn-event-edit-task {
+    margin: 2rem 0 10rem 4rem;
+}
+
+/*
+    //
+    // DELETE
+    //
+*/
+#btn-event-delete-task {
+    margin: 2rem 0 10rem 4rem;
+}

@@ -1,0 +1,119 @@
+﻿@using RWSS.Data.Enum
+@using RWSS.ViewModels.Registration
+@model RegisterViewModel
+
+
+@{
+	ViewData["Title"] = "Sign up";
+}
+
+<section class="jumbotron text-center">
+    <div id="jumbotron-container" class="container-jumbotron">
+        <h1 class="jumbotron-heading">Rejestracja</h1>
+        <div id="line-register" class="line"></div>
+        <p class="jumbotron-description">Dziękujemy za obdarzenie nas zaufaniem. Życzymy powodzenia w rejestracji w usłudze i mamy nadzieję, że spełni ona wszystkie Twoje potrzeby.</p>
+        <div id="jumbotron-register-btn" class="btn-container">
+            <a href="#register-label" class="my-butt">Zarejestruj</a>
+            <a href="#contact-footer" class="my-butt">Kontakt</a>
+      </div>
+    </div>
+</section>
+
+<section class="board">
+    <div class="board-container">
+
+<div>
+    <div>
+        <p>
+            <h4 id="register-label">Zarejestruj się, aby założyć nowe konto</h4>
+        </p>
+
+        @if (TempData["Error"] != null)
+        {
+            <div class="col-md-12 alert alert-danger">
+                <span><b>Sorry!</b> - @TempData["Error"] </span>
+            </div>
+        }
+
+        <div>
+            <div id="forms" class="col-md-8 offset-2">
+                <form asp-action="Register">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="FirstName" class="control-label"></label>
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="LastName" class="control-label"></label>
+                        <input asp-for="LastName" class="form-control" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="PeselNumber" class="control-label"></label>
+                        <input asp-for="PeselNumber" class="form-control" />
+                        <span asp-validation-for="PeselNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="BirthDate" class="control-label"></label>
+                        <input asp-for="BirthDate" class="form-control" />
+                        <span asp-validation-for="BirthDate" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="EmailAddress" class="control-label"></label>
+                        <input asp-for="EmailAddress" class="form-control" />
+                        <span asp-validation-for="EmailAddress" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Password" class="control-label">Hasło</label>
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ConfirmPassword" class="control-label"></label>
+                        <input asp-for="ConfirmPassword" class="form-control" />
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="IndexNumber" class="control-label"></label>
+                        <input asp-for="IndexNumber" class="form-control" />
+                        <span asp-validation-for="IndexNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="YearCategory">Rok studiów</label>
+                        <select asp-for="YearCategory" asp-items="@Html.GetEnumSelectList<YearCategory>()" class="form-control">
+                            <option selected="selected" value="">--Wybierz--</option>
+                        </select>
+                        <span asp-validation-for="YearCategory" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="SemesterCategory">Semestr studiów</label>
+                        <select asp-for="SemesterCategory" asp-items="@Html.GetEnumSelectList<SemesterCategory>()" class="form-control">
+                            <option selected="selected" value="">--Wybierz--</option>
+                        </select>
+                        <span asp-validation-for="SemesterCategory" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DegreeCourseCategory">Kierunek studiów</label>
+                        <select asp-for="DegreeCourseCategory" asp-items="@Html.GetEnumSelectList<DegreeCourseCategory>()" class="form-control">
+                            <option selected="selected" value="">--Wybierz--</option>
+                        </select>
+                        <span asp-validation-for="DegreeCourseCategory" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="StudiesDegreeCategory">Stopień studiów</label>
+                        <select asp-for="StudiesDegreeCategory" asp-items="@Html.GetEnumSelectList<StudiesDegreeCategory>()" class="form-control">
+                            <option selected="selected" value="">--Wybierz--</option>
+                        </select>
+                        <span asp-validation-for="StudiesDegreeCategory" class="text-danger"></span>
+                    </div>
+                    <input class="btn btn-outline-success float-right" type="submit" value="Zarejestruj się" />
+                    <a class="btn btn-outline-secondary" asp-controller="Home" asp-action="Index">Anuluj</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</section>

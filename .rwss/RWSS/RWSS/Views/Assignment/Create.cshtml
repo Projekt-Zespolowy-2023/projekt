@@ -1,0 +1,36 @@
+﻿@using RWSS.ViewModels.Assignment
+@model CreateAssignmentViewModel
+
+<section class="jumbotron text-center">
+    <div class="container-jumbotron">
+        <h1 class="jumbotron-heading">Panel użytkownika</h1>
+                <div id="line-dashboard" class="line"></div>
+                <p id="jumbotron-description-dashboard" class="jumbotron-description">Pulpit nawigacyjny zapewnia cenne informacje i narzędzia, które pomagają efektywnie zarządzać kontem. Podejmij działania już teraz, aby zoptymalizować swoje doświadczenia i jak najlepiej wykorzystać usługę.</p>
+        <div id="jumbotron-dashboard-btn" class="btn-container">
+                    <a href="#dashboard-label-id" class="my-butt">Start</a>
+                    <a href="#contact-footer" class="my-butt">Kontakt</a>
+        </div>
+    </div>
+</section>
+
+<section class="board">
+    <div class="board-container">
+        <h1 id="dashboard-label-id" class="dashboard-label">Przydziel zadanie</h1>
+        <div class="form-group-container">
+<form method="post" asp-action="Create">
+    <input type="hidden" id="AssigneeId" name="AssigneeId" asp-for="AssigneeId" />
+    <div class="form-group">
+        <label asp-for="Body">Treść zadania</label>
+        <input asp-for="Body" class="form-control" placeholder="Tytuł">
+        <span asp-validation-for="Body" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DateOfAssignment">Data zadania</label>
+        <input asp-for="DateOfAssignment" class="form-control" placeholder="Tytuł">
+        <span asp-validation-for="DateOfAssignment" class="text-danger"></span>
+    </div>
+    <button id="btn-assignment-create-task" type="submit" class="btn btn-block btn-success btn-lg">Zatwierdź</button>
+</form>
+</div>
+</div>
+</section>
